@@ -1,0 +1,22 @@
+    - file: e_and_m/J-140_Maxwell_3_S0
+      sections:
+      - file: e_and_m/J-140_Maxwell_3_S1
+      - file: e_and_m/J-140_Maxwell_3_S2
+      - file: e_and_m/J-140_Maxwell_3_S3
+      - file: e_and_m/J-140_Maxwell_3_S4
+      - file: e_and_m/J-140_Maxwell_3_S5
+      - file: e_and_m/J-140_Maxwell_3_S6
+      - file: e_and_m/J-140_Maxwell_3_S7
+      - file: e_and_m/J-140_Maxwell_3_S8
+      - file: e_and_m/J-140_Maxwell_3_S9
+
+  - caption: Relativity
+    numbered: True
+    chapters:
+    - file: relativity/Special Relativity_1_1_VSC
+    - file: relativity/Special Relativity_2_1
+    - file: relativity/Special Relativity_3_1
+    - file: relativity/Special Relativity_4_1
+
+
+<div class="penout" markdown="1">🖋

@@ -1,0 +1,195 @@
+# Table of content
+# Learn more at https://jupyterbook.org/customize/toc.html
+#
+format: jb-book
+root: intro
+options:
+  numbered: True
+parts:
+  - caption: Foundations
+    numbered: True
+    chapters:
+    - file: beginning/J-010_me_S0
+      sections:
+      - file: beginning/J-010_me_S1
+      - file: beginning/J-010_me_S2
+      - file: beginning/J-010_me_S3
+      - file: beginning/J-010_me_S4
+      - file: beginning/J-010_me_S5
+      - file: beginning/J-010_me_S6
+    - file: beginning/J-020_preface_S0
+    - file: beginning/J-035_what_you_know_S0
+      sections:
+      - file: beginning/J-035_what_you_know_S1
+      - file: beginning/J-035_what_you_know_S2
+      - file: beginning/J-035_what_you_know_S3
+      - file: beginning/J-035_what_you_know_S4
+    - file: beginning/J-035_what_you_know_S5
+    - file: math/J-040_math_g_S0
+      sections:
+      - file: math/J-040_math_g_S1
+      - file: math/J-040_math_g_S2
+      - file: math/J-040_math_g_S3
+      - file: math/J-040_math_g_S4
+      - file: math/J-040_math_g_S5
+      - file: math/J-040_math_g_S6
+      - file: math/J-040_math_g_S7
+    - file: motion/J-050_motion_g_galileo2_S0
+      sections:
+      - file: motion/J-050_motion_g_galileo2_S1
+      - file: motion/J-050_motion_g_galileo2_S2
+      - file: motion/J-050_motion_g_galileo2_S3
+      - file: motion/J-050_motion_g_galileo2_S4
+      - file: motion/J-050_motion_g_galileo2_S5
+      - file: motion/J-050_motion_g_galileo2_S6
+      - file: motion/J-050_motion_g_galileo2_S7
+      - file: motion/J-050_motion_g_galileo2_S8
+      - file: motion/J-050_motion_g_galileo2_S9
+      - file: motion/J-050_motion_g_galileo2_S10
+      - file: motion/J-050_motion_g_galileo2_S11
+      - file: motion/J-050_motion_g_galileo2_S12
+      - file: motion/J-050_motion_g_galileo2_S13
+      - file: motion/J-050_motion_g_galileo2_S14
+      - file: motion/J-050_motion_g_galileo2_S15
+    - file: mechanics/J-060_MechanicsMomentum_2_S0
+      sections:
+      - file: mechanics/J-060_MechanicsMomentum_2_S1
+      - file: mechanics/J-060_MechanicsMomentum_2_S2
+      - file: mechanics/J-060_MechanicsMomentum_2_S3
+      - file: mechanics/J-060_MechanicsMomentum_2_S4
+      - file: mechanics/J-060_MechanicsMomentum_2_S5
+      - file: mechanics/J-060_MechanicsMomentum_2_S6
+      - file: mechanics/J-060_MechanicsMomentum_2_S7
+      - file: mechanics/J-060_MechanicsMomentum_2_S8
+      - file: mechanics/J-060_MechanicsMomentum_2_S9
+      - file: mechanics/J-060_MechanicsMomentum_2_S10
+    - file: collisions/J-070_Collisions_2_S0
+      sections:
+      - file: collisions/J-070_Collisions_2_S1
+      - file: collisions/J-070_Collisions_2_S2
+      - file: collisions/J-070_Collisions_2_S3
+      - file: collisions/J-070_Collisions_2_S4
+      - file: collisions/J-070_Collisions_2_S5
+      - file: collisions/J-070_Collisions_2_S6
+      - file: collisions/J-070_Collisions_2_S7
+      - file: collisions/J-070_Collisions_2_S8
+      - file: collisions/J-070_Collisions_2_S9
+      - file: collisions/J-070_Collisions_2_S10
+    - file: energy/J-080_energy_g_S0
+      sections:
+      - file: energy/J-080_energy_g_S1
+      - file: energy/J-080_energy_g_S2
+      - file: energy/J-080_energy_g_S3
+      - file: energy/J-080_energy_g_S4
+      - file: energy/J-080_energy_g_S5
+      - file: energy/J-080_energy_g_S6
+      - file: energy/J-080_energy_g_S7
+      - file: energy/J-080_energy_g_S8
+      - file: energy/J-080_energy_g_S9
+    - file: cosmology/J-090_Cosmology_One_S0
+      sections:
+      - file: cosmology/J-090_Cosmology_One_S1
+      - file: cosmology/J-090_Cosmology_One_S2
+      - file: cosmology/J-090_Cosmology_One_S3
+      - file: cosmology/J-090_Cosmology_One_S4
+      - file: cosmology/J-090_Cosmology_One_S5
+      - file: cosmology/J-090_Cosmology_One_S6
+      - file: cosmology/J-090_Cosmology_One_S7
+      - file: cosmology/J-090_Cosmology_One_S8
+    - file: cosmology/J-100_Cosmology_Two_2_g_S0
+      sections:
+      - file: cosmology/J-100_Cosmology_Two_2_g_S1
+      - file: cosmology/J-100_Cosmology_Two_2_g_S2
+      - file: cosmology/J-100_Cosmology_Two_2_g_S3
+      - file: cosmology/J-100_Cosmology_Two_2_g_S4
+      - file: cosmology/J-100_Cosmology_Two_2_g_S5
+      - file: cosmology/J-100_Cosmology_Two_2_g_S6
+      - file: cosmology/J-100_Cosmology_Two_2_g_S7
+      - file: cosmology/J-100_Cosmology_Two_3_g_S8
+      - file: cosmology/J-100_Cosmology_Two_3_g_S9
+      - file: cosmology/J-100_Cosmology_Two_3_g_S10
+      - file: cosmology/J-100_Cosmology_Two_2_g_S11
+    - file: e_and_m/J-110_ElectromagnetismCharges_2_S0
+      sections:
+      - file: e_and_m/J-110_ElectromagnetismCharges_2_S1
+      - file: e_and_m/J-110_ElectromagnetismCharges_2_S2
+      - file: e_and_m/J-110_ElectromagnetismCharges_2_S3
+      - file: e_and_m/J-110_ElectromagnetismCharges_2_S4
+      - file: e_and_m/J-110_ElectromagnetismCharges_2_S5
+      - file: e_and_m/J-110_ElectromagnetismCharges_2_S6
+      - file: e_and_m/J-110_ElectromagnetismCharges_2_S7
+      - file: e_and_m/J-110_ElectromagnetismCharges_2_S8
+    - file: e_and_m/J-120_Faraday_1_S0
+      sections:
+      - file: e_and_m/J-120_Faraday_1_S1
+      - file: e_and_m/J-120_Faraday_1_S2
+      - file: e_and_m/J-120_Faraday_1_S3
+      - file: e_and_m/J-120_Faraday_1_S4
+      - file: e_and_m/J-120_Faraday_1_S5
+      - file: e_and_m/J-120_Faraday_1_S6
+    - file: e_and_m/J-130_FaradayFields_1_S0
+      sections:
+      - file: e_and_m/J-130_FaradayFields_1_S1
+      - file: e_and_m/J-130_FaradayFields_1_S2
+      - file: e_and_m/J-130_FaradayFields_1_S3
+      - file: e_and_m/J-130_FaradayFields_1_S4
+      - file: e_and_m/J-130_FaradayFields_1_S5
+      - file: e_and_m/J-130_FaradayFields_1_S6
+      - file: e_and_m/J-130_FaradayFields_1_S7
+      - file: e_and_m/J-130_FaradayFields_1_S8
+    - file: e_and_m/J-140_Maxwell_3_S0
+      sections:
+      - file: e_and_m/J-140_Maxwell_3_S1
+      - file: e_and_m/J-140_Maxwell_3_S2
+      - file: e_and_m/J-140_Maxwell_3_S3
+      - file: e_and_m/J-140_Maxwell_3_S4
+      - file: e_and_m/J-140_Maxwell_3_S5
+      - file: e_and_m/J-140_Maxwell_3_S6
+      - file: e_and_m/J-140_Maxwell_3_S7
+      - file: e_and_m/J-140_Maxwell_3_S8
+      - file: e_and_m/J-140_Maxwell_3_S9
+      - file: e_and_m/J-140_Maxwell_3_S10
+      - file: e_and_m/J-140_Maxwell_3_S11
+  - caption: Relativity
+    numbered: True
+    chapters:
+    - file: relativity/J-150_SpecialRelativity_1_S0
+      sections:
+      - file: relativity/J-150_SpecialRelativity_1_S1
+      - file: relativity/J-150_SpecialRelativity_1_S2
+      - file: relativity/J-150_SpecialRelativity_1_S3
+      - file: relativity/J-150_SpecialRelativity_1_S4
+      - file: relativity/J-150_SpecialRelativity_1_S5
+      - file: relativity/J-150_SpecialRelativity_1_S6
+      - file: relativity/J-150_SpecialRelativity_1_S7
+      - file: relativity/J-150_SpecialRelativity_1_S8
+      - file: relativity/J-150_SpecialRelativity_1_S9
+    - file: relativity/J-160_SpecialRelativity_2_S0
+      sections:
+      - file: relativity/J-160_SpecialRelativity_2_S1
+      - file: relativity/J-160_SpecialRelativity_2_S2
+      - file: relativity/J-160_SpecialRelativity_2_S3
+      - file: relativity/J-160_SpecialRelativity_2_S4
+      - file: relativity/J-160_SpecialRelativity_2_S5
+      - file: relativity/J-160_SpecialRelativity_2_S6
+      - file: relativity/J-160_SpecialRelativity_2_S7
+      - file: relativity/J-160_SpecialRelativity_2_S8
+      - file: relativity/J-160_SpecialRelativity_2_S9
+      - file: relativity/J-160_SpecialRelativity_2_S10
+    - file: relativity/J-170_SpecialRelativity_3_S0
+      sections:
+      - file: relativity/J-170_SpecialRelativity_3_S1
+      - file: relativity/J-170_SpecialRelativity_3_S2
+      - file: relativity/J-170_SpecialRelativity_3_S3
+      - file: relativity/J-170_SpecialRelativity_3_S4
+      - file: relativity/J-170_SpecialRelativity_3_S5
+    - file: relativity/J-180_SpecialRelativity_4_S0
+      sections:
+      - file: relativity/J-180_SpecialRelativity_4_S1
+      - file: relativity/J-180_SpecialRelativity_4_S2
+      - file: relativity/J-180_SpecialRelativity_4_S3
+      - file: relativity/J-180_SpecialRelativity_4_S4
+      - file: relativity/J-180_SpecialRelativity_4_S5
+      - file: relativity/J-180_SpecialRelativity_4_S6
+      - file: relativity/J-180_SpecialRelativity_4_S7
+      - file: relativity/J-180_SpecialRelativity_4_S8

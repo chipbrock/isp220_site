@@ -1,0 +1,413 @@
+# What I'll Bet You Know Already {#already}
+
+> Memory lane
+
+<p class="message" markdown="1">
+I know that QS&BB is a daunting project for you, especially if it's been a while since you had some science in college or high school. Think of this as the "calm-down-lesson."
+</p>
+
+
+<!-- ###### Contents -->
+
+<!-- {:.no_toc} -->
+
+<!-- * Toc -->
+<!-- {:toc} -->
+
+
+
+## A Little Bit of Mr Hauswald
+
+I'll bet if you ask almost any professional scientist what first made them think of a scientific career they'll probably remember a high school teacher. That was certainly the case for me in my little farm community of Sycamore, Illinois in the late 1960's. In our school, there were two tracks for students: the "college track" and the "technical track." The latter was for kids who wanted to farm or be a machinist or a cook or a secretary and so on. This worked great and they all had jobs that applied credit for their area of concentration. So they made money and learned on the job.
+
+<aside class="marginfigure"  markdown="1">
+
+```{r walter, echo=FALSE, fig.align="center", fig.cap="Walter E. Hauswald<br> 1904-2004", dev='png', out.width = "150"}
+knitr::include_graphics('./images/beginning/walter.png')
+```
+</aside>
+
+The college track in those days included four years of math, through pre-calculus; two years of a language (French or Latin...my mother made me take Latin which was taught by the baseball coach whom I disliked --- inside the lines and in the classrooom); and four years of science. (Oh yeah. We had a whole term of "typewriter.") We took a biology course in our freshman year --- taught by the track coach. In those days we learned about evolution without any controversy.
+
+Our sophomore-through-senior science was all Mr Hauswald: pre-chem, chemistry, and physics. Mr Hauswald was a large, taciturn man who'd been teaching at that school since the 1930's. When I was there he was seeing children of parents and grandparents that he'd taught there. Outside of the classroom, people were afraid of Mr Hauswald. He was large, had a no-nonsense demeanor, and posted scores for exams and quizes by student name outside of the door to his room. That took some getting used to.
+
+But inside the classroom, he was patient and a funny, funny man. I can still remember him swivelling on his stool with both hands pointing at the window to indicate what happens to an electron in a magnetic field. He took me under his wing for some reason and I spent my study hall periods in his room setting up his labs and demonstrations for the day.
+
+He encouraged me to take a computer course at IIT on Saturdays, which was traumatic for my parents who thought that a 16 year old shouldn't be driving 60 miles into the dangerous city --- but they liked Mr Hauswald, and so that worked. He also encouraged me to read outside of class on the topics that he would only skim. For me the outside fascination was Quantum Theory and I wrote a term paper on it for him that wasn't required. 
+
+Mr Hauswald made my bones and in part I dedicated my PhD thesis to him and enjoyed talking to him after I graduated and began working as a scientist and a professor. He's gone now, but I think about him as I stand in front of classes.
+
+```{r thesis, echo=FALSE, fig.align="center", fig.cap="A couple of pages of the preface to my PhD thesis.", dev='png', out.width = "800"}
+knitr::include_graphics('./images/beginning/thesis.png')
+```
+
+Let's talk about some of the things that Mr Hauswald taught me and I'll bet you've picked up along the way also. You probably know a little about motion, force, electric charge, big numbers and simple algebra, and atoms.
+
+<!-- -------------------------------------------------- -->
+## Remembering Motion {#youknowrememberingmotion}
+<!-- -------------------------------------------------- -->
+
+
+Let’s start "motion" very slowly (no pun intended).
+
+>**You already know about motion. **<br><br>
+>Since before you started driving, you began to develop an intuition for magnitudes of speeds and speed arithemetic You do that all the time: if you travel at 50 mph for 2 hours, you will have gone how far? 100 miles, right?<br>
+
+<p class="pullquote"  markdown="1">You know a lot about speed and could write a sentence-equation that defines it. </p>
+
+Here it is. Admire it because it's going to evolve: <br><br>
+$$\text{speed} = \text{distance traveled divided the time that it took}$$
+Let's make our word equation more apparent:<br><br>
+$$\text{speed}=\frac{\text{distance traveled}}{\text{time that it took}}.$$
+Simple! Speed is a *rate* --- a "something" per time. 
+
+
+
+<!-- write it --------------------->
+
+<div class="penout" markdown="1">🖋<br>
+**Question!** A trip: You're driving along at a constant speed and at the $x=10~$mile marker your friend looks at her watch and notes the time to be 4pm. Then you drive a while and at the 90 mile marker she looks again and reads that the time is 6pm. What was your average speed during that time?<br><br>
+**Glad you asked.**  Well, it looks like the distance was 80 miles and the time it took was 2 hours. 
+Here's a tool you can use to calcualte this...and anything else in QS&BB. Let Mr Google help. You know that to find an averate speed you divide the distance traveled by the time. Let's do this a couple of ways and you'll see how useful Google has become. 
+The speed is $80/2$ or $40~$mph and you knew that already.<br><br>
+**Good job!**
+</div>
+
+><!-- back to normal -------------->
+
+
+
+### Speed units
+
+In a "regular" physics course, faculty will obsess about the units of things. Meters, feet, pounds, Volts, kg m/s...the list is almost endless. I'll not *obsess* but of course we'll use units. They'll not get in the way of the physics concepts---sometimes I'll ignore them and just use numbers (see "not obsess" above). We'll need to do some unit conversion, but I'll give them to you or you can get them from Mr Google. (For example, if you wanted to convert 60 mph into km/s...just type "60 mph into km/s" into the search field and behold.)
+
+Having said that, let's obsess about highway signs.
+
+<aside class="marginfigure"  markdown="1">
+
+```{r sign, echo=FALSE, fig.align="center", fig.cap="It's not just a good idea, it's the law. But it should give the units, miles per hour!", dev='png', out.width = "125"}
+knitr::include_graphics('./images/motion/speedsign.png')
+```
+</aside>
+
+
+What are the units of speed? Our signs say, "Speed Limit, 55." What is that? mph? meters per second? km per hour? stadions (look it up) per fortnight? It's silly to just say “55,” but that's what we do. 
+
+
+Hold the phone! (That was a Mr Hauswald expression, by the way.) That’s exactly what our speed limit signs *do* say, or actually, don't say. But you know it's "mph." You even intuit speed units without being told!
+
+
+> **Wait.** What about Canada? <br><br>
+> **Glad you asked.** Good question. A Canadian speed limit sign is a lot more informative. It will say "MAXIMUM 100 km/h" (which is about 62 mph). I give full credit to Canadian signs and take off 5 points for absent units to American signs.
+
+**This is cool**: I'm not going to worry about unit conversions here (although in a physics class for science majors, that would be a requirement.) Use this tool and type in "(80 miles)/(2 hours) in mph" and see what you get:
+
+Calculate it:        
+<form target="_blank" action="http://www.google.com/search" method="get">
+    <input type="text" name="q" size="80%"/>
+</form>
+
+* Now type in "(80 miles)/(2 hours) in m/s" and see what happens.
+* 80 mph is about 128 kilometers, so be tricky and type in: "128 km/2 hours in mph" and be impressed. 
+* How about: "(128 km)/(2 hours) in furlongs per year"?
+* Oh, how did I know that 80 miles was about 128 km? Why I typed in "80 miles in km" that's how.
+
+Feel free to use this when units are an issue or you want to calculate anything by writing out the formula.
+
+To us, motion and its measure—speed—is a simple matter. Our cars and even devices on our wrists readily tell us how far we go, how long it takes us to get there, and the rate at which we do it. We can be penalized for traveling at rates that are...too enthusiastic. Speed, or its more sophisticated word-cousin, velocity, is so familiar to us that we hardly pay any attention to just how fundamental it actually is. Speed is a blend of two even more fundamental concepts of space and time. And we're all about space and time in *Quarks, Spacetime, and the Big Bang*.
+
+### Accelerated Motion
+
+You've heard about Galileo and towers and Newton and apples and we'll get into that, but I'll bet you remember that when things fall that they go faster and faster as time elapses, so their speeds are not constant but varying. We call that *acceleration* and it too is a rate:
+
+$$\text{acceleration}=\frac{\text{velocity change}}{\text{time that it took}}.$$
+
+Step on the gas and you accelerate --- you increase your speed in every time increment --- which maybe is why the long pedal is called that? 
+
+### Forces and Acceleration
+
+<div class="titlemarginnote">
+In our unfortunate US units, forces have units of pounds, accelerations have units of ft per second per second (or miles per hour per hour), and masses have units of --- wait for it --- slugs. In the units of science --- and the whole rest of planet earth --- force is measured in Newtons, N, accelerations are meters per second per second, and masses are in grams or kilograms. These units are a subset of the  International System of Units (SI), which are the modern "metric units." (Knock yourself out: [https://en.wikipedia.org/wiki/International_System_of_Units](https://en.wikipedia.org/wiki/International_System_of_Units).) Our units are called, "U.S customary units" or sometimes, "Imperial Units," which are very similar. I'll refer back to US units only when it will be helpful for you to make contact with everyday life. 
+</div>
+From your own experience, or even in a previous class you probably know that pushing on something makes it go faster. Pedaling at a constant force makes your bike go faster, and holding the pedal at a constant pressure makes your car go faster and faster. 
+
+
+In the above language, inspired by Newton, we say that a force is proportional to an acceleration: double the force and you double the acceleration. When ever you hear "proportional" to you can turn it into "equal to" with a constant of proportionality and for our purposes here, that constant is the object's mass, $m$. The relationship is then the second of Newton's "laws":
+
+$$F=ma.$$
+
+Hey. Our first equation...which is suitable for a T-shirt.
+
+<!-- write it --------------------->
+<div class="penout" markdown="1">🖋<br><br>
+**Question!** If I want my acceleration to be 10 meters per second per second and my mass is 90 kg, then I need to apply a force of how many Newtons?<br><br>
+**Glad you asked.**  Well, I'd multiply them: $90\times 10=900~$N. <br><br>
+**Good job!** By the way, 10 m/s/s is just about the force of gravity, so if I were to jump out of a tree, 900 N is the force that the earth would be pulling on me as I accelerate to the ground. And the force that the ground would exert on my feet when I land. It's not the fall that's uncomfortable, it's the landing.
+</div>
+<!-- back to normal -------------->
+
+By the way, Mr Google knows Newton also.
+
+* Type in "90 kg * 10 m/s^2 in Newtons" and see what happens.
+
+Calculate it:        
+<form target="_blank" action="http://www.google.com/search" method="get">
+    <input type="text" name="q" size="80%"/>
+</form><br>
+
+* Now type in "90 kg * 10 m/s^2 in pounds" and see that he knows how to do the calculation and convert.
+
+## Some Mathematics
+
+I'll treat mathematics is a language --- something that I'll ask you to read, but not derive on your own. This is not a normal way of dealing with physics for non-science majors. Usually in such courses, you'd be reading along and *boom*, an equation will appear as if by magic. When I can, I'll motivate any relations which might require reading some of the story which will be in symbols and words, not just words alone. You'll see how I'll do that in a way that will increase your insight. Pencils will be involved.
+
+
+That’s it. Now we have everything we need to turn numbers into sizes of...stuff.
+
+
+
+
+### The Big 10: “Powers Of 10,” That Is
+
+One of the more difficult things for us to get our heads around will be the sizes of things, the speeds of things, and the masses of things that fill the pages of QS&BB. Lots and lots of zeros for a large or small number means: lots of mistakes and a hopelessness for the relative magnitudes of one big or small thing compared to another. Big and small numbers are really difficult to process for all of us.
+
+I have no idea how much bigger is the Milky Way Galaxy (950,000,000,000,000,000,000 meters) than the diameter of Jupiter (143,000,000 meters). It all blends together.
+
+> **Wait.** That sounds pretty grim.<br><br>
+> **Glad you asked.** But wait. There's a solution: the beauty of "10" or lots of "10's."
+
+#### Exponential notation
+
+A number expressed in exponential notation displays like this:
+
+$$\text{a number} \times 10^{\text{power}}.$$ So 5000 meters could be written as
+
+$$5 \times 10^3~$$meters.
+
+Let’s think about this in two parts. First, the 10-power part.
+
+<div class="titlemarginnote">
+Some of you might have learned a different nomenclature like: 5E3. I'll accept it, but mixing letters for a number makes it harder to multiply or divide numbers in exponential notation. So I'll do it my way --- and I encourage you to also.
+</div>
+
+The rules above work for 10 just like any number, so $10^n$ is shorthand for the number that you get when you multiply 10 by itself $n$ times. This has benefits because of the features of 10-multiples, that we count in base-10, and now you can just count zeros. So for example:
+
+$$10^3 = 10 \times 10 \times 10 = 1,000.$$
+
+The power counts the zeros, or more specifically, the position to the right of the decimal point from 1. So if you have any number, you can multiply it by the 10-power part and have a compact way of representing big and small numbers.
+
+<!-- write it --------------------->
+<div class="penout">🖋<br>
+So, following through:
+
+$$ 3 \times 10^3 = 3 \times 10 \times 10 \times 10 = 3 \times 1000 = 3000. $$
+
+We can do the same thing with numbers less than 1, by using negative exponents for the 10-power part.
+
+$$
+0.03 = \cfrac{3}{100} = \cfrac{3}{10^2} = 3 \times 10^{-2}.
+$$
+
+So you just move the decimal place the power-number to the right to go from $3 \times 10^{-2}$ to 0.03.
+</div>
+<!-- back to normal -------------->
+
+* BTW: you know the drill by now. Try typing in "3 * 10^3":
+
+Calculate it:        
+<form target="_blank" action="http://www.google.com/search" method="get">
+    <input type="text" name="q" size="80%"/>
+</form><br>
+
+* Or, "3 * 10^(-3)"?
+
+
+<br>
+The second thing is the number in front that multiplies the power of 10. It’s called the “mantissa” and that’s all it is…a number.
+
+The powers of 10 come with handy nicknames that imply a particular amount... like "kilo-gram," meaning 1,000 grams. You already know many of them. Here are more powers of 10 than you ever want to know:
+
+---------------------------
+#### Powers of 10
+
+| nickname      | prefix | SI symbol | factor                         | power of ten |
+| :------------ | :----- | :----- | :-------------------------------- | :----------- |
+| septillionth  | yocto- | y      | 0.000000000000000000000001        | $10^{-24}$   |
+| sextillionth  | zepto- | z      | 0.000000000000000000001           | $10^{-21}$   |
+| quintillionth | atto-  | a      | 0.000000000000000001              | $10^{-18}$   |
+| quadrillionth | femto- | f      | 0.000000000000001                 | $10^{-15}$   |
+| trillionth    | pico-  | p      | 0.000000000001                    | $10^{-12}$   |
+| billionth     | nano-  | n      | 0.000000001                       | $10^{-9}$    |
+| millionth     | micro- | $\mu$   | 0.000001                          | $10^{-6}$    |
+| thousandth    | milli- | m      | 0.001                             | $10^{-3}$    |
+| hundredth     | centi- | c      | 0.01                              | $10^{-2}$    |
+| tenth         | deci-  | d      | 0.1                               | $10^{-1}$   |
+| one           |        |        | 1                                 | $10^{0}$    |
+| ten           | deca-  | da     | 10                                | $10^{1}$     |
+| hundred       | hecto- | h      | 100                               | $10^{2}$     |
+| thousand      | kilo-  | k      | 1,000                             | $10^{3}$     |
+| million       | mega-  | M      | 1,000,000                         | $10^{6}$     |
+| billion       | giga-  | G      | 1,000,000,000                     | $10^{9}$    |
+| trillion      | tera-  | T      | 1,000,000,000,000                 | $10^{12}$   |
+| quadrillion   | peta-  | P      | 1,000,000,000,000,000             | $10^{15}$    |
+| quintillion   | exa-   | E      | 1,000,000,000,000,000,000         | $10^{18}$    |
+| sextillion    | zetta- | Z      | 1,000,000,000,000,000,000,000     | $10^{21}$    |
+| septillion    | yotta- | Y      | 1,000,000,000,000,000,000,000,000 | $10^{24}$    |
+| ... | | | | |
+| googol        |        | ?      | 10,000,000,000,000,000,000,000,000,|    |
+|               |        |        | 000,000,000,000,000,000,000,000,|    |
+|               |        |        | 000,000,000,000,000,000,000,000,|    |
+|               |        |        | 000,000,000,000,000,000,000,000,|    |
+|               |        |        | 000| $10^{100}$   |
+
+<p class="caption"> Large number powers of 10 including the SI ("International System of Units") letter-symbols.</p>---------------------------
+
+> **Wait.** Is there a Googol of anything in the universe? <br><br>
+> **Glad you asked.** I don't think so. There is something like $10^{80}$ atoms in the universe...mostly hydrogen, as you'll learn later. The number of possible chess games that can be played is $10^{123}$. The number of unique shuffles of two decks of playing cards is $10^{166}$. But no Googol of things in the unverse. 
+><br><br>BTW: I'm sure you'll be happy to know that a Googolplex is defined to be $10^{\text{googol}}$ or $10^{10^{100}}$.
+
+
+
+<div class="titlemarginnote">
+
+You'll notice that I got lazy and skipped right to the end, where there's a "story there." When the Google.com inventors (one from East Lansing, BTW) were trying to come up with a name that would represent an enormous number of searches, someone suggested the name "googol," which is the nickname for $10^{100}$, which is indeed a lot. Well, when they went searching to see if anyone had registered the name, one of them misspelled it "google" and so that's what the company became. You're welcome.
+</div>
+
+A "feel" for sizes is pretty much limited to our puny human experiences. I can probably estimate a length of about 10 feet. So I might be able to approximate the hight of a building, for example. Or compare the distances of two plots of land. But much more than that, I'm out of in-grained tools. Well, this is "particle physics" and "cosmology"...the smallest items and the largest ones in the whole universe. So the prefixes in the list above? We'll need many of them. Here's a list of "things" from normal to, well, extreme.
+
+### The Big and the Small of QS&BB: Sizes in the Universe
+
+Here is a ranked list of big and small things with approximate sizes, along with the nicknames that we use. We’ll span these enormous distance ranges and eventually Tera-this and pico-that will just roll off your tongue.
+
+---------------------------
+#### Big Stuff
+
+
+1. African elephant, 4 m
+2. Height of a six story hotel, 30 m, $3.0 \times 10^1$ m
+3. Statue of Liberty, 90 m, $9.0 \times 10^1$ m
+4. Height of Great Pyramid of Giza, 140 m, $1.4 \times 10^2$ m
+5. Eiffel Tower, 300 m, $3.0 \times 10^2$ m
+6. Mount Rushmore 1700 m, $1.7 \times 10^3$ m, 1.7 km
+7. District of Columbia, 16,000 m square, $16.0 \times 10^3$ m, or $1.6     \times 10^4$ m
+8. Texas, East to West, 1,244,000 m, $1.244 \times 10^6$ m, 1244 km, or 1.244 mega-m
+9. Pluto, 2,300,000 m diameter, $2.3 \times 10^6$ m
+10. Moon, 3,500,000 m diameter, $3.5 \times 10^6$ m
+11. Earth, 12,800,000 m diameter, $12.8 \times 10^6$ m, or $1.28 \times     10^7$ m
+12. Jupiter, 143,000,000 m diameter, $143.0 \times 10^6$ m, or $1.43 \times     10^8$ m
+13. Distance Earth to Moon, 384,000,000 m, $384.0 \times 10^6$ m, or $3.84     \times 10^8$ m
+14. Sun, 1,390,000,000 m diameter, $1.39 \times 10^9$ m, 1.39 giga-m
+15. Distance, Sun to Pluto, 5,900,000,000,000 m, $5.9 \times 10^{12}$ m, 5.9 tera-m
+16. Distance to nearest star (Alpha Centuri), 41,300,000,000,000,000,000 m,     $41.3 \times 10^{18}$ m, or $4.13 \times 10^{19}$ m, 41.3 Exa-m
+17. Diameter of the Milky Way Galaxy, 950,000,000,000,000,000,000 m, $950     \times 10^{18}$ m, or $9.5 \times 10^{19}$ m, 9.5 Exa-m
+18. Distance to the Andromeda Galaxy, 24,000,000,000,000,000,000,000 m, $24.0     \times 10^{21}$ m, or $2.4 \times 10^{22}$ m, 24 zetta-m
+19. Size of the Pisces–Cetus Supercluster Complex, our supercluster,     9,000,000,000,000,000,000,000,000 m, $9.0 \times 10^{24}$ m, 9 zetta-m*
+20. Distance to UDFj-39546284, the furthest object observed,     120,000,000,000,000,000,000,000,000 m, $120 \times 10^{24}$ m or $1.2     \times 10^{26}$ m
+
+\* This is out of hand. we have different units for astronomical objects!
+
+And on the other end of the scale:
+
+<p class="caption"> Representative big and bigger things.</p>---------------------------
+
+
+#### Small Stuff
+
+1. Circumference of a basketball, (regulation 30 inches) 0.762 m, 76.2 cm
+2. Diameter of a golf ball, 0.043 m, 4.3 cm, or 0.043 m, 43 milli-m, mm
+3. Diameter of a green pea, 0.001 m, 1 cm, or 0.01 m, 10 mm
+4. A small ladybug, 0.5 cm, 0.005 m or $5\times 10^{-3}$m, 5 mm
+5. A human hair diameter. $10^{-4}$ m, 100 $ \text{micro-m, }  100 \mu$m
+6. Wavelength of mid infrared wave, $100 \times 10^{-6}$ m, $100 \mu$m
+7. Diameter of a human cell. $10^{-6}$ m, 10 $\mu$m
+8. Width of a large molecule. Sugar, $6 \times 10^{-10}$m, 0.6 nm, 600 pico-m, pm
+9. A large atom. Cesium atom (largest)  $ 2.225 \times 10^{-10}$ m, 0.225 nm, 225 pm
+10. Wavelength of soft X-ray (12.4 keV), $100 \times 10^{-12}$ m, 100 pm
+11. Wavelength of hard X-ray (124 keV, 300 EHz), $10 \times 10^{-12}$ m, 10 pm
+12. Compton wavelength of an electron, $2.4 \times 10^{-12}$ m, 2.4 pm
+13. Bohr radius, $53 \times 10^{-11}$ m, 53 pm
+14. 1 Angstrom, $10^{-10}$ m, 100 pm
+15. Radius of Helium nucleus (alpha particle). $1.6 \times 10^{-15}$m, 0.016 femto-m, fm
+16. Radius of a gold nucleus. $7 \times 10^{-15}$ m, 0.000007 nm, 7 fm
+17. Diameter of a hydrogen nucleus (a proton). $ 1.3 \times 10^{-15}$ m, 0.0000013 nm , 1.3 fm
+18. Radius of a quark (upper limit), $10^{-18}$ m, 1 am
+19. The smallest distance that can exist: the “Planck length,” $10^{-35}$ m
+
+<p class="caption"> Representative tiny things.</p>---------------------------
+We'll care about both extremes of these two tables of things.
+I don't know Mr Huang, but his *Scale of the Universe 2* (http://htwins.net) is worth playing with, if not owning his app. You know. For parties.
+
+
+### Simple Algebra
+
+Have you ever used a spreadsheet? If not, I'll bet you will and in order to simplfy calculations, you'll probably write formulas and manipulate the results of formulas that you create. You'll do Microsoft Algebra, or "just algebra" since I don't think Microsoft has copywrited it yet.
+
+It's no secret that physics can be pretty mathematical. QS&BB physics, notsomuch. We'll use zero trigonometry. We'll of course not use calculus. We'll use vectors, but only pictorially or in one-dimension only. Algebra manipulation is almost like a strategy game. You know where you want to go and what the rules are about getting there. You just need to remember:
+
+
+## Energy
+
+Obviously a course on relativity will involve energy! We'll keep it simple, although there's actually nothing simple about energy. 
+
+My high school coverage of energy taught me that it comes in various forms like: thermal energy, radiant energy, chemical energy, nuclear energy, electrical energy, motion energy, sound energy, elastic energy and gravitational energy.
+
+Nope. We'll see that Einstein made this all much simpler, while making it subtle. Let's get simple and remember that "classical" forms of energy could be boiled down to just
+
+* energy of motion---kinetic energy
+
+* energy that's just waiting to become energy of motion---potential energy
+
+The easiest way to think about potential energy is holding a book above the floor. It has "gravitational potential energy" since were you to let go, it would fall---it would gain kinetic energy as it sped to the ground. Pull on the bow with an arrow in play and the bow string would have "elastic potential energy" which it's eager to convert into kinetic energy as it goes back to its original shape. It transfers that motion to the arrow which gains kinetic energy also.
+
+A really important idea is one of conservation. Not the kind that you might think of in nature, although that's important too. No, "conservation laws" in physics are a big deal, although they can be expressed in a simple way:
+
+<p class="pullquote"  markdown="1">What goes in, comes out. </p>
+You might have heard that energy can neither be created nor destroyed. Add up all of the energies in some system at some time, let nature do her thing---warm up, cool down, undergo a chemical reaction, slow down, speed up, drop from a height---and then add up all of the energies in the system at some later time and you'll get the same number.
+
+I'll make this a little more sophisticated, but the basic rule of energy conservation is just that: whatever goes in comes out.
+
+## Matter
+
+You'll remember that what we call matter is made up of molecules, molecules are particular combinations of atoms, and that atoms are made of protons, neutrons, and electrons. These latter objects might be referred to as "elementary particles." 
+
+> **Wait.** What’s “elementary” mean in this context? <br><br>
+> **Glad you asked.** The simplest way to think of "elementary" is an object that cannot be divided into parts. So an atom is not elementary since it's made up of other things. As far as we know, and electron is elementary. But we now know that protons and neutrons are *not* elementary since we know them to be comprised of other particles called quarks and gluons. We'll get into that.
+
+It's a lot more complicated than that and while the "planetary model" of electrons circling the nucleus (of protons and neutrons) is evocative, the actual situation is really very abstract. This will occupy our attention when we learn about quantum mechanics and just what the elementary partiles *are* is the subject of particle physics
+
+### Electric Charges
+
+If you live in the midwest in the winter, then you're familiar with electrial charge since you can create sparks that you can feel, and even sometimes see when you stand on a carpet --- or better, rub your feet on a carpet --- and then touch something metalic. What you feel, and maybe hear or see, are electrons jumping from your skin to the metal object. That's a spark. 
+
+Electricity is the subject of electric charges which come in three kinds: positive, negative, and neutral. The names don't matter and there's a Ben Franklin story there, but for our introductory purposes we'll keep track by just remembering the following:
+
+<p class="pullquote"  markdown="1">Like electric charges repell one another. Unlike electric charges attact one another. Neutral electric charges feel no electrical force between them. </p>
+
+"Repell" and "attract" are words that indicate that forces are applied, one charge to another. Just how much force and what direction the net force is depends on the amount of charge and how far away the charges are from one another. The fact that you're sitting on a chair and not falling through it or the earth is because the negative charges at the back of your lap repell the negative charges on the surface of your chair and so you're suspended between them. The unit of electrical charge is the Coulomb (C), which is pretty enormous and comes from 18th century measurements and definitions, so we're stuck with it.
+
+The quantum mechanics and particle physics of electricity (and magnetism) are a part of our story and we have explanations for what these phenomena are that is very precise. And pretty.
+
+### Electric Currents
+
+You also all know about electrical currents: 
+
+<p class="pullquote"  markdown="1">An electric current is charges flowing in time. </p>
+
+We tend to think of currents as charges flowing in metalic wires, but even that spark from your finger to the doorknob are an electric current, unconstrained by the volume of a wire. 
+
+We measure currents in Amperes (who we'll learn about), "A." 1 A is 1 C of charge flowing past a point per second. And yes, Mr Google knows electricity.
+
+* Type "(10 C) per (1 second)" into:
+
+Calculate it:        
+<form target="_blank" action="http://www.google.com/search" method="get">
+    <input type="text" name="q" size="80%"/>
+</form><br>
+
+### Radioactivity
+
+Electric charges have to come from somewhere and one of the surprises in the late 19th century was that some nuclei just sitting around actually spontaneously emit electric charges, electrons and "alpha" particles (which were found to be two protons and two neutrons bound together, a helium nucleus). That was odd. Matter just seemed to fall apart. Radioactivity is the name for this phenomonon and is particularly of concern for radioactive waste from nuclear power or tragically, from the debris of nuclear weapons.
+
+These are the things that I suspect you already know (or maybe you didn't even realize you knew) and so we can dig into each of these subjects where we'll find that the 20th century changed everything.
+
+

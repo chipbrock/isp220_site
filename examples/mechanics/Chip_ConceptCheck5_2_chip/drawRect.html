@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<SCRIPT language="JavaScript">
+	<!--
+	var bgImage = new Image();
+	bgImage.src = "bgPic.jpg";
+	//-->
+	</SCRIPT>
+  <meta charset="utf-8">
+  <title>Bauer & Westfall</title>
+</head>
+
+<body>
+<center>
+	<div id="canvasesdiv" style="position:relative; width:768px; height:576px">
+		<canvas id="layer1" style="z-index: 1; position:absolute; left:0px; top:0px;" height="576" width="768" tabindex="0">
+          This text is displayed if your browser does not support HTML5 Canvas.
+		</canvas>
+	</div>
+	<div id="userInput">
+		<table>
+			<tr>
+				<td><input type="text" id="vField" size=20></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="uField" size=50></td>
+			</tr>
+		</table>
+	</div>
+<p>
+Click and drag to draw a rectangle.
+</p>
+</center>
+<p align='right'>
+&copy; W. Bauer and G.D. Westfall, 2013
+</p>
+
+<script type="text/javascript">
+	var layer1 = document.getElementById("layer1");
+	var ctx1 = layer1.getContext("2d");
+	var WIDTH = 768, HEIGHT = 576;
+
+	var inter = setInterval(drawAll,40);		// set the time between successive screen updates to 40 ms
+	var iControl = 0, numInter=0;				// counters for screen updates
+	layer1.onmousedown = myDown;							// mouse event handler for computer browsers
+	layer1.onmouseup = myUp;								// mouse event handler for computer browsers
+	layer1.addEventListener('keydown', doKeyDown, true);	// keyboard entry on computers
+	layer1.addEventListener("touchstart", myTouchStart, false);	// touch handler for iPhones, iPads, and Androids
+	layer1.addEventListener("touchmove", myTouchMove, false);	// touch handler for iPhones, iPads, and Androids
+	layer1.addEventListener("touchend", myTouchEnd, false);		// touch handler for iPhones, iPads, and Androids
+	var dragRect = false;
+	var x1, y1, dx, dy;
+	init();
+
+function init() {
+	drawAll();
+}
+
+function drawAll() {
+	var allLoaded = bgImage.complete;
+	// iControl monitors how many redraws there have been already since the start of the app
+	iControl ++;
+	// here we allow the first n redraws at the start of the app to make sure that all images have loaded
+	if (allLoaded && numInter == 0) {numInter = iControl; inter=window.clearInterval(inter); };
+
+	layer1.width = layer1.width;												// clear canvas
+	ctx1.drawImage(bgImage, 0, 0, WIDTH, HEIGHT);
+	
+	ctx1.strokeStyle = "red";
+	if (x1 > 0) {
+		ctx1.strokeRect(x1,y1,dx,dy);
+		document.getElementById('vField').value = ''+x1+','+y1+','+dx+','+dy;
+		document.getElementById('uField').value = 'x_ > '+x1+' && x_ < '+(x1+dx)+' && y_ > '+y1+' && y_ < '+(y1+dy);
+	}
+}
+
+function doKeyDown(event){
+	//console.log(''+event.keyCode);
+	if (event.keyCode == 38) {y1--;}			  				// up key
+	if (event.keyCode == 40) {y1++;}			  				// down key
+	if (event.keyCode == 37) {x1--;}			  				// left key
+	if (event.keyCode == 39) {x1++;}			  				// right key
+	drawAll();
+}
+
+
+function whereClicked(x_,y_,what_) {
+	//if (what_ == 'down') {console.log('('+x_+','+y_+')'+what_)};
+	if (what_ == 'down') {
+		dragRect = true;
+		x1 = x_;
+		y1 = y_;
+	}
+	if (what_ == 'move') {
+		dragRect = true;
+		dx = x_-x1;
+		dy = y_-y1;
+	}
+	if (what_ == 'up') {
+		dragRect = false;
+		dx = x_-x1;
+		dy = y_-y1;
+	}
+}
+	  	 
+function myMove(event){
+	var xClick = event.pageX - canvasesdiv.offsetLeft;
+	var yClick = event.pageY - canvasesdiv.offsetTop;
+	whereClicked(xClick,yClick,'move');
+	drawAll();
+}
+
+function myDown(event){
+	var xClick = event.pageX - canvasesdiv.offsetLeft;
+	var yClick = event.pageY - canvasesdiv.offsetTop;
+	whereClicked(xClick,yClick,'down');
+	layer1.onmousemove = myMove;
+	drawAll();
+}
+
+function myUp(event){
+	var xClick = event.pageX - canvasesdiv.offsetLeft;
+	var yClick = event.pageY - canvasesdiv.offsetTop;
+	whereClicked(xClick,yClick,'up');
+	layer1.onmousemove = null;
+	drawAll();
+}
+
+function myTouchMove(event){
+	event.preventDefault();
+	var xClick = event.targetTouches[0].pageX - canvasesdiv.offsetLeft;
+	var yClick = event.targetTouches[0].pageY - canvasesdiv.offsetTop;
+	whereClicked(xClick,yClick,'move');
+	drawAll();
+}
+
+function myTouchStart(event){
+	event.preventDefault();
+	var xClick = event.targetTouches[0].pageX - canvasesdiv.offsetLeft;
+	var yClick = event.targetTouches[0].pageY - canvasesdiv.offsetTop;
+	whereClicked(xClick,yClick,'down');
+	drawAll();
+}
+
+function myTouchEnd(event){
+	event.preventDefault();
+	var xClick = event.targetTouches[0].pageX - canvasesdiv.offsetLeft;
+	var yClick = event.targetTouches[0].pageY - canvasesdiv.offsetTop;
+	whereClicked(xClick,yClick,'up');
+	drawAll();
+}
+</script>
+
+</body>
+</html>
