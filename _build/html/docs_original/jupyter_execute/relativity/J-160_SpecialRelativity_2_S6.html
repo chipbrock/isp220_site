@@ -1,0 +1,986 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Time Dilation &#8212; Quarks, Spacetime, and the Big Bang</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.4cbf315f70debaebd550c87a6162cf0f.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystyle.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 120}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs_original/jupyter_execute/relativity/J-160_SpecialRelativity_2_S6';</script>
+    <link rel="canonical" href="https://chipbrock.github.io/isp220_site/docs_original/jupyter_execute/relativity/J-160_SpecialRelativity_2_S6.html" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Quarks, Spacetime, and the Big Bang</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../intro.html">
+                    Welcome to Quarks, Spacetime, and the Big Bang!
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Foundations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../beginning/J-010_me_S0.html">1. Lesson 1: A Little Bit About This On-line Text</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../beginning/J-010_me_S1.html">1.1. What Quarks, Spacetime, and the Big Bang Isn’t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../beginning/J-010_me_S2.html">1.2. What Quarks, Spacetime, and the Big Bang Is</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../beginning/J-010_me_S3.html">1.3. The Great Scientist Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../beginning/J-010_me_S4.html">1.4. How I Think About You and Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../beginning/J-010_me_S5.html">1.5. How Deep Do We Go?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../beginning/J-010_me_S6.html">1.6. Let’s Go!</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../beginning/J-020_preface_S0.html">2. Lesson 2: Once Upon a Time…</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../beginning/J-035_what_you_know_S0.html">3. Lesson 3: What I’ll Bet You Know Already</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../beginning/J-035_what_you_know_S1.html">3.1. Remembering Motion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../beginning/J-035_what_you_know_S2.html">3.2. Some Mathematics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../beginning/J-035_what_you_know_S3.html">3.3. Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../beginning/J-035_what_you_know_S4.html">3.4. Matter</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../math/J-040_math_g_S0.html">4. Lesson 4: Mathematics, The M Word</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../math/J-040_math_g_S1.html">4.1. A Little Bit of Descartes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../math/J-040_math_g_S2.html">4.2. The M Word</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../math/J-040_math_g_S3.html">4.3. Functions, the QS&amp;BB Way</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../math/J-040_math_g_S4.html">4.4. A Gentle Review 1: Skills You’ll Frequently Need</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../math/J-040_math_g_S5.html">4.5. Geometry: Vectors, Curves…Formulas From Your Past?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../math/J-040_math_g_S6.html">4.6. A Gentle Review 2: Skills for Only a Few Times</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../math/J-040_math_g_S7.html">4.7. What to Remember from Lesson 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../motion/J-050_motion_g_galileo2_S0.html">5. Lesson 5: <br/>Motion, Getting From Here to There</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../motion/J-050_motion_g_galileo2_S1.html">5.1. A Little Bit of Galileo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../motion/J-050_motion_g_galileo2_S2.html">5.2. The Medieval Version of Here to There: A Little Bit of Aristotle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../motion/J-050_motion_g_galileo2_S3.html">5.3. Getting From Here to There: At Constant Speed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../motion/J-050_motion_g_galileo2_S4.html">5.4. A Model for Motion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../motion/J-050_motion_g_galileo2_S5.html">5.5. Multiplication and Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../motion/J-050_motion_g_galileo2_S6.html">5.6. Now For Something Completely Different: Feynman Diagrams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../motion/J-050_motion_g_galileo2_S7.html">5.7. Back to Galileo: Acceleration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../motion/J-050_motion_g_galileo2_S8.html">5.8. The Equations of Constant Acceleration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../motion/J-050_motion_g_galileo2_S9.html">5.9. Acceleration, In Everyday Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../motion/J-050_motion_g_galileo2_S10.html">5.10. Special Kinds of Acceleration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../motion/J-050_motion_g_galileo2_S11.html">5.11. The Pendulum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../motion/J-050_motion_g_galileo2_S12.html">5.12. Going In the Right Direction!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../motion/J-050_motion_g_galileo2_S13.html">5.13. Projectiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../motion/J-050_motion_g_galileo2_S14.html">5.14. The Beginning of Physics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../motion/J-050_motion_g_galileo2_S15.html">5.15. What to Remember from Lesson 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../mechanics/J-060_MechanicsMomentum_2_S0.html">6. Lesson 6: <br/>The Big Mo, Force and Momentum</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../mechanics/J-060_MechanicsMomentum_2_S1.html">6.1. A Little Bit of Newton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../mechanics/J-060_MechanicsMomentum_2_S2.html">6.2. Impulse: Getting Going</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../mechanics/J-060_MechanicsMomentum_2_S3.html">6.3. Newton’s Mass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../mechanics/J-060_MechanicsMomentum_2_S4.html">6.4. The “Quantity of Motion”: Momentum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../mechanics/J-060_MechanicsMomentum_2_S5.html">6.5. Newton’s Famous Three laws</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../mechanics/J-060_MechanicsMomentum_2_S6.html">6.6. Newton’s Second law</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../mechanics/J-060_MechanicsMomentum_2_S7.html">6.7. Weight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../mechanics/J-060_MechanicsMomentum_2_S8.html">6.8. Finally, Nothing: Forces in Balance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../mechanics/J-060_MechanicsMomentum_2_S9.html">6.9. Circular Motion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../mechanics/J-060_MechanicsMomentum_2_S10.html">6.10. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../collisions/J-070_Collisions_2_S0.html">7. Lesson 7: Collisions, Banging Things Together</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../collisions/J-070_Collisions_2_S1.html">7.1. A Little Bit of Huygens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../collisions/J-070_Collisions_2_S2.html">7.2. Varieties of Collisions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../collisions/J-070_Collisions_2_S3.html">7.3. Ideal Collisions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../collisions/J-070_Collisions_2_S4.html">7.4. Quantum-like Collisions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../collisions/J-070_Collisions_2_S5.html">7.5. Impulse and Momentum Conservation and the Third law</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../collisions/J-070_Collisions_2_S6.html">7.6. The Simplest Collision of All, Everyday and Quantum Mechanically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../collisions/J-070_Collisions_2_S7.html">7.7. Collision Diagrams: Same Song, Different Verse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../collisions/J-070_Collisions_2_S8.html">7.8. Algebra by Thermometers!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../collisions/J-070_Collisions_2_S9.html">7.9. Two and More Dimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../collisions/J-070_Collisions_2_S10.html">7.10. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../energy/J-080_energy_g_S0.html">8. Lesson 8:  Energy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../energy/J-080_energy_g_S1.html">8.1. Ability to Do Damage: Kinetic Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../energy/J-080_energy_g_S2.html">8.2. Work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../energy/J-080_energy_g_S3.html">8.3. That Stop Shot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../energy/J-080_energy_g_S4.html">8.4. Energy Conservation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../energy/J-080_energy_g_S5.html">8.5. Eager to Do Damage: Potential Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../energy/J-080_energy_g_S6.html">8.6. Okay, But What Is It…Really?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../energy/J-080_energy_g_S7.html">8.7. The Exchange of Potential and Kinetic Energies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../energy/J-080_energy_g_S8.html">8.8. Energy and Momentum, From 50,000 Feet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../energy/J-080_energy_g_S9.html">8.9. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../cosmology/J-090_Cosmology_One_S0.html">9. Lesson 9: Early Cosmology</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../cosmology/J-090_Cosmology_One_S1.html">9.1. A Little Bit of Kepler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../cosmology/J-090_Cosmology_One_S2.html">9.2. Ancient Astronomy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../cosmology/J-090_Cosmology_One_S3.html">9.3. Greeks, Measuring Stuff</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../cosmology/J-090_Cosmology_One_S4.html">9.4. Putting the Sun Where It (almost) Belongs: Copernicus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../cosmology/J-090_Cosmology_One_S5.html">9.5. Revolutionibus and Scandal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../cosmology/J-090_Cosmology_One_S6.html">9.6. Astronomy, If It Ain’t Baroque, Don’t Fix It: Tycho</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../cosmology/J-090_Cosmology_One_S7.html">9.7. Kepler’s Battle With Mars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../cosmology/J-090_Cosmology_One_S8.html">9.8. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../cosmology/J-100_Cosmology_Two_2_g_S0.html">10. Lesson 10: Galileo’s Astronomy and Newton’s Gravitation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../cosmology/J-100_Cosmology_Two_2_g_S1.html">10.1. A Little Bit More of Galileo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../cosmology/J-100_Cosmology_Two_2_g_S2.html">10.2. What Galileo Saw!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../cosmology/J-100_Cosmology_Two_2_g_S3.html">10.3. The Apple Moment: Newton’s Gravity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../cosmology/J-100_Cosmology_Two_2_g_S4.html">10.4. What’s the Moon’s Centripetal Acceleration?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../cosmology/J-100_Cosmology_Two_2_g_S5.html">10.5. Now Think Big!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../cosmology/J-100_Cosmology_Two_2_g_S6.html">10.6. Universal Gravitation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../cosmology/J-100_Cosmology_Two_2_g_S7.html">10.7. The Gravitation Constant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../cosmology/J-100_Cosmology_Two_3_g_S8.html">10.8. Gravitational Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../cosmology/J-100_Cosmology_Two_3_g_S9.html">10.9. Three Problems for Newton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../cosmology/J-100_Cosmology_Two_3_g_S10.html">10.10. Cosmology Begins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../cosmology/J-100_Cosmology_Two_2_g_S11.html">10.11. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../e_and_m/J-110_ElectromagnetismCharges_2_S0.html">11. Lesson 11: Charge It! Charges and Magnets</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-110_ElectromagnetismCharges_2_S1.html">11.1. A Little of Gilbert</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-110_ElectromagnetismCharges_2_S2.html">11.2. Magnetism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-110_ElectromagnetismCharges_2_S3.html">11.3. Electricity: Poor Richard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-110_ElectromagnetismCharges_2_S4.html">11.4. Forces from Electricity: Coulomb’s Law</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-110_ElectromagnetismCharges_2_S5.html">11.5. Forces from Currents: Electromagnetism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-110_ElectromagnetismCharges_2_S6.html">11.6. Inverse Square “laws”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-110_ElectromagnetismCharges_2_S7.html">11.7. Modern Ideas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-110_ElectromagnetismCharges_2_S8.html">11.8. What to Remember from Lesson 11</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../e_and_m/J-120_Faraday_1_S0.html">12. Lesson 12: Faraday’s Experiments and An Extraordinary Idea</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-120_Faraday_1_S1.html">12.1. A Little Bit of Faraday</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-120_Faraday_1_S2.html">12.2. Faraday’s Experiments in Electricity and Magnetism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-120_Faraday_1_S3.html">12.3. Induction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-120_Faraday_1_S4.html">12.4. The Field</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-120_Faraday_1_S5.html">12.5. Faraday’s Health</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-120_Faraday_1_S6.html">12.6. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../e_and_m/J-130_FaradayFields_1_S0.html">13. Lesson 13: Faraday’s E&amp;M Fields</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-130_FaradayFields_1_S1.html">13.1. A Tiny Bit More of Faraday</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-130_FaradayFields_1_S2.html">13.2. The Electric Field</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-130_FaradayFields_1_S3.html">13.3. The Revolutionary Idea of a Field</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-130_FaradayFields_1_S4.html">13.4. Electric Field for Other Configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-130_FaradayFields_1_S5.html">13.5. Energy In Electric Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-130_FaradayFields_1_S6.html">13.6. Electron Volts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-130_FaradayFields_1_S7.html">13.7. Magnetic Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-130_FaradayFields_1_S8.html">13.8. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../e_and_m/J-140_Maxwell_3_S0.html">14. Lesson 14: Waves and Maxwell’s Fields</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-140_Maxwell_3_S1.html">14.1. A Little Bit of Maxwell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-140_Maxwell_3_S2.html">14.2. Wave Goodbye</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-140_Maxwell_3_S3.html">14.3. Maxwell’s Idea of the  Field: Maxwell’s Equations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-140_Maxwell_3_S4.html">14.4. The Jelly of the Ether</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-140_Maxwell_3_S5.html">14.5. The Speed of Light, Old School</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-140_Maxwell_3_S6.html">14.6. Maxwell’s Insight and Electromagnetic Waves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-140_Maxwell_3_S7.html">14.7. A Modern Summary of Maxwell’s Results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-140_Maxwell_3_S8.html">14.8. So What Gets an EM Wave Going?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-140_Maxwell_3_S9.html">14.9. Charged Particles in Electromagnetic Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-140_Maxwell_3_S10.html">14.10. The Lorentz Force, Broken Down</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../e_and_m/J-140_Maxwell_3_S11.html">14.11. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Relativity</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../relativity/J-150_SpecialRelativity_1_S0.html">15. Lesson 15: Special Relativity, 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-150_SpecialRelativity_1_S1.html">15.1. A Little Bit About Michelson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-150_SpecialRelativity_1_S2.html">15.2. That Zero</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-150_SpecialRelativity_1_S3.html">15.3. Moving Through The Ether</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-150_SpecialRelativity_1_S4.html">15.4. The Fallout of Michelson’s Null Result</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-150_SpecialRelativity_1_S5.html">15.5. Getting Serious: The Michelson-Morley Experiment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-150_SpecialRelativity_1_S6.html">15.6. Michelson and Chicago</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-150_SpecialRelativity_1_S7.html">15.7. More Trouble With Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-150_SpecialRelativity_1_S8.html">15.8. Frames of Reference, For Real</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-150_SpecialRelativity_1_S9.html">15.9. What to Remember from Lesson 15</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../relativity/J-160_SpecialRelativity_2_S0.html">16. Lesson 16: <br/>Special Relativity, 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-160_SpecialRelativity_2_S1.html">16.1. A Little Bit About Einstein</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-160_SpecialRelativity_2_S2.html">16.2. A Different Way Out: Einstein’s Relativity Paper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-160_SpecialRelativity_2_S3.html">16.3. What Was the Cause of That Storm? The Second Postulate’s Implications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-160_SpecialRelativity_2_S4.html">16.4. Queue: The Soapbox.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-160_SpecialRelativity_2_S5.html">16.5. Double Down on the Second Postulate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-160_SpecialRelativity_2_S6.html">16.6. Time Dilation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-160_SpecialRelativity_2_S7.html">16.7. Length Contraction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-160_SpecialRelativity_2_S8.html">16.8. Let’s Summarize</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-160_SpecialRelativity_2_S9.html">16.9. Is Relativity the Case?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-160_SpecialRelativity_2_S10.html">16.10. What to Remember from Lesson 16</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../relativity/J-170_SpecialRelativity_3_S0.html">17. Lesson 17: <br/>Special Relativity, 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-170_SpecialRelativity_3_S1.html">17.1. A Little Bit about Lorentz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-170_SpecialRelativity_3_S2.html">17.2. Lorentz Transformations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-170_SpecialRelativity_3_S3.html">17.3. Maxwell’s Equations, Revisited</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-170_SpecialRelativity_3_S4.html">17.4. Speeds in Special Relativity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-170_SpecialRelativity_3_S5.html">17.5. What to Remember from Lesson 17</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../relativity/J-180_SpecialRelativity_4_S0.html">18. Lesson 18: <br/>Special Relativity, 4</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-180_SpecialRelativity_4_S1.html">18.1. A Little Bit of Minkowski</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-180_SpecialRelativity_4_S2.html">18.2. Working Our Way toward Relativistic Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-180_SpecialRelativity_4_S3.html">18.3. The Rubber Meets the Road: Particle Creation and Potential Energies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-180_SpecialRelativity_4_S4.html">18.4. Isn’t Anything Constant??</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-180_SpecialRelativity_4_S5.html">18.5. Spacetime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-180_SpecialRelativity_4_S6.html">18.6. The Aftermath</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-180_SpecialRelativity_4_S7.html">18.7. Is Relativity The Case?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../relativity/J-180_SpecialRelativity_4_S8.html">18.8. What To Remember from Lesson 18</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fdocs_original/jupyter_execute/relativity/J-160_SpecialRelativity_2_S6.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/docs_original/jupyter_execute/relativity/J-160_SpecialRelativity_2_S6.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Time Dilation</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spoiler-time-dilation">Spoiler: Time Dilation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-does-time-dilation-mean">What Does Time Dilation Mean?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#twin-paradox">Twin “Paradox”</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="time-dilation">
+<h1>Time Dilation<a class="headerlink" href="#time-dilation" title="Permalink to this heading">#</a></h1>
+<p>Let’s build a light clock. Anything that has a regular time “beat” can be a clock, we’re going to use light beams that bounce around between mirrors.</p>
+<p>The premise is this:</p>
+<ul class="simple">
+<li><p>A light pulse is inserted through a hole at the bottom of…of course…a flatbed train car. No apples.</p></li>
+<li><p>There are two perfect mirrors at the top and the bottom which are separated by a distance, <span class="math notranslate nohighlight">\(L\)</span></p></li>
+<li><p>The beams bounce back and forth in this view, which is that of the frame of reference of the train…we’ll call it <span class="math notranslate nohighlight">\(A\)</span> because you know what’s coming.</p>
+<ul>
+<li><p>So up is tick, and back down, is tock. A very accurate clock.</p></li>
+</ul>
+</li>
+</ul>
+<img alt="docs_original/jupyter_execute/_images/relativity/lightclock_A.png" class="align-left" src="docs_original/jupyter_execute/_images/relativity/lightclock_A.png" />
+<BR CLEAR="all">
+<figcaption> The light-clock as viewed in the train frame, riding along with it. We're on the side of the tracks, so we would call this the "A Frame" (as opposed to the "A Train"...with homage to Ella Fitzgerald & Duke Ellington. I crack myself up.)
+</figcaption>
+<p>But it’s a train and trains move and so does this one to the right at a velocity <span class="math notranslate nohighlight">\(u\)</span>. And, of course we have a guy lounging on a couch and he’s watching the whole thing go by. What does someone riding on the train see? Exactly the same thing at each increment of time: what’s shown in the above picture. A perfectly vertical path of the light back and forth. Tick tock.</p>
+<p>What does Couch Guy see? The train is moving and so when tick happens, it’s moved to the right a bit from the laser-pointer insertion. When tock happens, it’s moved a little further. So if Couch guy maps out the trajectory of the light pulses from his <span class="math notranslate nohighlight">\(H\)</span> frame, he’d see this:</p>
+<img alt="docs_original/jupyter_execute/_images/relativity/lightclock_H.png" class="align-left" src="docs_original/jupyter_execute/_images/relativity/lightclock_H.png" />
+<BR CLEAR="all">
+<figcaption> This is the view from Couch Guy, beside the tracks. I've overlayed the view on the train with his tracing of the beam as the train moves by him. He's the H Frame.
+</figcaption>
+<p>The path of the light for him is a triangle.</p>
+<p>The Second Postulate makes this simple situation become weird. And this is an important conclusion and it’s so subtle that it’s worth following it carefully</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>I walk you through the weirdest consequence of the Second Postulate:</p>
+<center>
+<video width="600"  controls>
+  <source src="https://qstbb.pa.msu.edu/storage/ISP220_stuff/popup/lighclock_reduced.mp4" type="video/mp4">
+</video>
+</center>
+</div>
+<p>In fact, this is an Pop-Up assignment that you’ll receive instructions for during the class. It’s to follow along with this simple, but enlightening derivation and turn in your version of it.</p>
+<section id="spoiler-time-dilation">
+<h2>Spoiler: Time Dilation<a class="headerlink" href="#spoiler-time-dilation" title="Permalink to this heading">#</a></h2>
+<p>If you’ve not been through the movie (why not?) then this is a spoiler alert! The calculation follows the two paths of light, the tick tock, up and down in the <span class="math notranslate nohighlight">\(A\)</span> frame and the tick tock in the longer, triangular path in the <span class="math notranslate nohighlight">\(H\)</span> frame. The distances traveled are different – <span class="math notranslate nohighlight">\(L\)</span> for the <span class="math notranslate nohighlight">\(A\)</span> frame and the hypothenuse of the triangle of which one leg has a length <span class="math notranslate nohighlight">\(L\)</span> as observed in the <span class="math notranslate nohighlight">\(H\)</span> frame.</p>
+<p>We can solve for the speed of light during a tick tock (actually, in the video, just a tick) which is simply the distance traveled divided by the speed.</p>
+<div class="warning admonition">
+<p class="admonition-title">  Pencils Out! 🖋 📓</p>
+<p>We pretend for the moment that the speed of light in the Home frame and the Away frame are different (<span class="math notranslate nohighlight">\(c_H \text{ &amp; } c_A\)</span>) and we worked to solve for the two “tick” times from both frames:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(u\)</span> is the relative speed between the train and the ground, <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(H\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(c_A=\dfrac{L}{t_A}\)</span> and</p></li>
+<li><p><span class="math notranslate nohighlight">\(c_H=\dfrac{\ell}{t_H}\)</span></p></li>
+</ul>
+<p>By invoking the Second Postulate:</p>
+<div class="math notranslate nohighlight">
+\[
+c_H = c_A = c \nonumber
+\]</div>
+<p>we found that the tick from the tick-tock of the Home frame and the tick from the tick-tock of the Away frame are different! From the video clip, you can see that it’s the Second Postulate that causes this to happen.</p>
+<p>We found that:</p>
+<div class="math notranslate nohighlight">
+\[
+t_H = \frac{t_A}{\sqrt{1-\left(\dfrac{u}{c}\right)^2}}.
+\]</div>
+<p>This root-factor will appear over and over in relativity and so it gets a special name, <span class="math notranslate nohighlight">\(\gamma\)</span>, and is called the “relativistic gamma”:</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma =\frac{1}{\sqrt{1-\left(\dfrac{u}{c}\right)^2}}.
+\]</div>
+<p>Furthermore, the frame speed compared with the speed of light also appears over and over and it gets its own name, “beta”:</p>
+<div class="math notranslate nohighlight">
+\[
+\beta = \dfrac{u}{c}.
+\]</div>
+<p>So with that we can recast our two formulae as:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+t_H =&amp; \frac{t_A}{\sqrt{1-\beta^2}} \\
+t_H =&amp;\gamma t_A
+\end{align*}
+\end{split}\]</div>
+</div>
+<p>Now let’s think about this. First, look carefully at <span class="math notranslate nohighlight">\(\gamma\)</span>. Notice that</p>
+<div class="math notranslate nohighlight">
+\[
+\text{if } \dfrac{u}{c}=\beta=0 \text{ then } \gamma = 1. \nonumber
+\]</div>
+<p>And:</p>
+<div class="math notranslate nohighlight">
+\[
+\text{if } \gamma = 1 \text{ then } t_H = t_A. \nonumber
+\]</div>
+<p>Can you see that this is the same thing as the train sitting still relative to Couch Guy? The clocks would both report the same times since they’re both in the same reference frame.</p>
+<p>Is <span class="math notranslate nohighlight">\(\gamma\)</span> bigger or smaller than 1?</p>
+<p>Well, <span class="math notranslate nohighlight">\(u/c &lt;1\)</span> (why will come later) so <span class="math notranslate nohighlight">\(\beta\)</span> is a number that always is between <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(1\)</span>. So…<span class="math notranslate nohighlight">\((1-\beta^2)\)</span> is a number that’s always less than one and so:</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma &gt;1 \nonumber
+\]</div>
+<p>Let’s plot it as a function of <span class="math notranslate nohighlight">\(u\)</span> or more easily and generally, as a function of <span class="math notranslate nohighlight">\(\beta\)</span>:</p>
+<!-- 
+```{code-cell} ipython3
+:tags: ["hide-input"]
+
+import numpy as np
+import math
+import bokeh
+import bokeh.plotting as bop
+from bokeh.plotting import figure, show, output_notebook
+from bokeh.models import HoverTool
+from bokeh.models import Range1d
+
+output_notebook()
+
+```
+
+```{code-cell} ipython3
+:tags: ["hide-input"]
+
+def gamma(x):
+    return np.sqrt(1/(1-(x**2)))
+
+x = np.arange(0,1.0,0.0001)
+y = gamma(x)
+
+gamma_plot = figure(width=700, height=700)
+gamma_plot.line(x, gamma(x), line_width=2)
+gamma_plot.y_range = Range1d(0, 10)
+
+hover = HoverTool(tooltips=[('beta', '@x'),
+                            ('gamma', '@y')])
+gamma_plot.add_tools(hover)
+
+try:
+    bop.reset_output()
+    bop.output_notebook()
+    bop.show(gamma_plot)  # angrily yells at me about single ownership
+except:
+    bop.output_notebook()
+    bop.show(gamma_plot)  # ...aaaaaaand we're back to happy inline plotting.
+```
+
+<figcaption> The relativistic gamma function as a function of the fraction of the speed of light of an away frame.
+</figcaption>
+-->
+<p>Look at the extremes: when <span class="math notranslate nohighlight">\(u\)</span> is very close to the speed of light, <span class="math notranslate nohighlight">\(\gamma\)</span> is growing very large, without bound, very fast. When <span class="math notranslate nohighlight">\(\beta=1\)</span>, then <span class="math notranslate nohighlight">\(\gamma \to \infty\)</span>! Maybe <span class="math notranslate nohighlight">\(\beta\)</span> should never reach the speed of light? Stay tuned.</p>
+<p>If we look at the low-<span class="math notranslate nohighlight">\(\beta\)</span> end of the <span class="math notranslate nohighlight">\(\gamma\)</span> curve,</p>
+<img alt="docs_original/jupyter_execute/_images/relativity/gamma_small.png" class="align-left" src="docs_original/jupyter_execute/_images/relativity/gamma_small.png" />
+<BR CLEAR="all">
+<figcaption> A blowup of the "small" speed fraction of the entire $\beta$ range. </figcaption>
+<p>Here’s an interactive plot of the gamma function.</p>
+<p>Remember to push Run:</p>
+<iframe src="https://trinket.io/embed/glowscript/f57b6366d6?outputOnly=true" width="100%" height="700" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<p>we see that the deviation from <span class="math notranslate nohighlight">\(\gamma=1\)</span> is very slow. At, say <span class="math notranslate nohighlight">\(\beta=0.1\)</span>, <span class="math notranslate nohighlight">\(\gamma\)</span> is barely 1.005.</p>
+<p>Let’s get a feel for just how fast <span class="math notranslate nohighlight">\(\beta=0.1\)</span> is. That’s 10% of the speed of light, or <span class="math notranslate nohighlight">\(3\times 10^7\)</span> m/s:</p>
+<p><strong>MKS units</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+c=&amp; 300,000,000 \text{ m/s} \\
+0.1c \approx&amp; 30 \text{ million m/s}
+\end{align*}
+\end{split}\]</div>
+<p><strong>US units:</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+c=&amp; 671,000,000 \text{ mph} \\
+0.1c \approx&amp; 70 \text{ million mph}
+\end{align*}
+\end{split}\]</div>
+<p>The fastest human-made object at this time is the Parker Solar Probe: which is headed towards the sun at 213,200 mph, or  about 95,310 m/s – what’s its beta?</p>
+<div class="math notranslate nohighlight">
+\[
+\beta = \frac{u}{c} = \frac{9.5 \times 10^4}{3 \times 10^8}=3.2 \times 10^{-4} = 0.00032
+\]</div>
+<p>What’s its gamma? Inside of the width of the blue dot of the plot:</p>
+<img alt="docs_original/jupyter_execute/_images/relativity/gamma_probe.png" class="align-left" src="docs_original/jupyter_execute/_images/relativity/gamma_probe.png" />
+<BR CLEAR="all">
+<p>Can you see now that for anything like a human speed, <span class="math notranslate nohighlight">\(\beta\)</span> is so close to 0 as to be silly to contemplate in everyday life.</p>
+<div class="danger admonition">
+<p class="admonition-title">  Please answer question 2 📺</p>
+<p><a href="https://loncapa.msu.edu//tiny/msu/gByycX"  target="_blank">Beta examples</a></p>
+</div>
+<div class="danger admonition">
+<p class="admonition-title">  Please answer question 3 📺</p>
+<p><a href="https://loncapa.msu.edu//tiny/msu/hHzsYK"  target="_blank">Gamma examples</a></p>
+</div>
+<p>In general, though, the two times are different for co-moving frames of reference and it matters in nuclear physics, in particle physics, in astrophysics, and in…well, your grandparents’ TV, your GPS system, and in a number of modern devices. But driving on the highway or flying in an airplane? Notsomuch.</p>
+<div class="danger admonition">
+<p class="admonition-title">  Please study example 1  🖋 📓</p>
+<p><a href="../examples/relativity/dilation_1_R2_E1.html" target="_blank">Time Dilation: a particle decay</a></p>
+</div>
+</section>
+<section id="what-does-time-dilation-mean">
+<h2>What Does Time Dilation Mean?<a class="headerlink" href="#what-does-time-dilation-mean" title="Permalink to this heading">#</a></h2>
+<p>Let’s distinguish between two important concepts – really common sense, but in the Einstein-way of being precise about the meanings of simple things.</p>
+<div class="important admonition">
+<p class="admonition-title">  An event  <br></p>
+<p>is something that happens at a particular place at a particular time. If the train car had a firecracker at a particular place on the car and it exploded while the car was in motion relative to the ground, then both observers could note the position in their frames and the time in their frames at which the explosion <strong>event</strong> occurred.</p>
+</div>
+<div class="important admonition">
+<p class="admonition-title">  An interval  <br></p>
+<p>is the difference between two positions in space and time during which two events occur. In the firecracker example, if Moe lights the fuse of the firecracker, that’s one event and the explosion is then a second event and the space and time differences, which I’ll often note as <span class="math notranslate nohighlight">\(\Delta x\)</span> and <span class="math notranslate nohighlight">\(\Delta t\)</span>, are the space and time <strong>intervals</strong>.</p>
+</div>
+<p>Often, we can define the first event in an interval as the beginning of a time interval, so to be boringly pedantic: <span class="math notranslate nohighlight">\(\Delta t = t-t_0 = t - 0 = t\)</span> if we define the initial time (when you push the start button on your stopwatch) to be zero, <span class="math notranslate nohighlight">\(t_0=0\)</span>.</p>
+<p>Here’s an example which involves an apple. Let’s string a series of time snapshots together top, to bottom as time increases, top to bottom.</p>
+<p>1. An Away frame with an apple advances to the right relative to our Home frame.</p>
+<img alt="docs_original/jupyter_execute/_images/relativity/apple_1.png" class="align-left" src="docs_original/jupyter_execute/_images/relativity/apple_1.png" />
+<BR CLEAR="all">
+<p>2. At a particular point, the apple approaches its last moment of being whole…</p>
+<img alt="docs_original/jupyter_execute/_images/relativity/apple_2.png" class="align-left" src="docs_original/jupyter_execute/_images/relativity/apple_2.png" />
+<BR CLEAR="all">
+<p>3. …because 1 second later, a bite happens.</p>
+<img alt="docs_original/jupyter_execute/_images/relativity/apple_3.png" class="align-left" src="docs_original/jupyter_execute/_images/relativity/apple_3.png" />
+<BR CLEAR="all">
+<p>4. And the lighter apple continues on its way.</p>
+<img alt="docs_original/jupyter_execute/_images/relativity/apple_4.png" class="align-left" src="docs_original/jupyter_execute/_images/relativity/apple_4.png" />
+<BR CLEAR="all">
+<p>So, we have an interval at one moment it’s whole, and then a second later, it’s lost a bite.</p>
+<img alt="docs_original/jupyter_execute/_images/relativity/apple_5.png" class="align-left" src="docs_original/jupyter_execute/_images/relativity/apple_5.png" />
+<BR CLEAR="all">
+<p>Think of this as sitting beside the tracks and as the train emerges from a tunnel (starting the stopwatch), watching a passenger take a bite out of her apple (halting the stopwatch).</p>
+<p>So here,</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\Delta t_A = 1 \)</span> second which we can call just <span class="math notranslate nohighlight">\(t_A\)</span> since the stopwatch starts at <span class="math notranslate nohighlight">\(t_A=0\)</span>.</p></li>
+<li><p>The train is moving right along at 90% of the speed of light.</p></li>
+<li><p>What’s <span class="math notranslate nohighlight">\(\Delta t_H\)</span>? How long did it take for the passenger to take that bite after emerging from the tunnel as observed by, say, creepy Couch Guy?</p></li>
+</ul>
+<p>What <strong>Time Dilation</strong> says is this:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta t_H = \gamma \Delta t_A \nonumber
+\]</div>
+<p>We can use the plot of the relativistic gamma function to find what <span class="math notranslate nohighlight">\(\gamma\)</span> is for this train frame.</p>
+<img alt="docs_original/jupyter_execute/_images/relativity/apple_gamma.png" class="align-left" src="docs_original/jupyter_execute/_images/relativity/apple_gamma.png" />
+<BR CLEAR="all">
+<p>I think it’s about <span class="math notranslate nohighlight">\(\gamma=2.3\)</span>.</p>
+<p>So while the apple-consumer sees her clock advance by 1 second, Couch Guy sees his clock advance by 2.3 seconds.</p>
+<p>Let’s get this clear in our heads.</p>
+<img alt="docs_original/jupyter_execute/_images/relativity/HA_clocks.png" class="align-left" src="docs_original/jupyter_execute/_images/relativity/HA_clocks.png" />
+<BR CLEAR="all">
+<p>While the <span class="math notranslate nohighlight">\(A\)</span> clock has ticked off 1 second, the <span class="math notranslate nohighlight">\(H\)</span> clock took 2.3 seconds to advance for the same interval.</p>
+<ul class="simple">
+<li><p>Away clocks appear to a Home frame to run slower. It appears for an interval of time to take longer.</p></li>
+</ul>
+<p>This is why its called Time Dilation: when your eyes are dilated at the Optometrist’s office, they’ve become wider, more expanded.</p>
+<p>This has an immediate effect in particle and nuclear physics. Many nuclei and elementary particles have finite lifetimes. We’ll talk a lot about this later, but it’s sufficient to imagine that a now-you-see-it-now-you-don’t aspect is at work for many pieces of elementary nature. Take the lowly neutron. Put a neutron on the table (in your mind) and let it sit there minding its own business…eventually it will suddenly cease to be a neutron and become a proton, along with an electron and a pesky particle called a neutrino. If you put 100 neutrons on the table after about 10 seconds, on average there will be 50 neutrons and 50 protons on the table. After another 10 seconds, there will be 25 neutrons and 75 protons on the table. The half life of a free neutron is 10.2 seconds. That’s an average.</p>
+<p>Now suppose that our 100 neutrons are whizzing by you at 90% of the speed of light and you follow them, then it will take <span class="math notranslate nohighlight">\(10.2 \times 2.3 = 23.5\)</span> seconds for half of those neutrons to have decayed. In the neutron’s (Away) frame, they appear to last 10 seconds, but in the laboratory (Home) frame, they live longer.</p>
+<p>This is a very real technique in particle and nuclear physics, used all the time artificially and naturally in nature. We’ll have more to say about this.</p>
+<p>There’s more evidence that this is a real thing. In 1971, Joseph C. Hafele, a physicist, and Richard E. Keating, an astronomer took four atomic clocks (Cesium) and put two of them on a regular commercial airliner and two of them at United States Naval Observatory in Washington, D.C. Then they flew around the world, once eastward and once westward…and compared the clocks when they returned.</p>
+<img alt="docs_original/jupyter_execute/_images/relativity/around_the_world.png" class="align-left" src="docs_original/jupyter_execute/_images/relativity/around_the_world.png" />
+<BR CLEAR="all">
+<figcaption> Happy physicists with their first-class atomic clock and lots of frequent flier miles.
+</figcaption>
+<p>The clocks differed by exactly what Time Dilation would predict. We’ll talk more about this later because the fact that the Home clocks were on the surface of the Earth and the Away clocks were five miles above called into play not only Einstein’s Special Theory of Relativity, but also his General Relativity theory that involves gravitation. Both were required to get the differences expected.</p>
+<p>Time Dilation is a fact of nature for all kinds of clocks: mechanical clocks, atomic clocks, elementary particle decays, and biological clocks. Think about that last one. You age according to natural processes of decay and rejuvenation. You heart beats. Your synapses fire at intervals governed by bio-electric impulses. Your cells age and die and are remade. You’re a clock.</p>
+<p>Two points:</p>
+<ol class="arabic simple">
+<li><p>The time interval between two events measured in the frame in which they happen <em>at the same place</em>, but at different times, is a special time. It’s the situation of our light clock in the frame of the train. As I’ve mentioned, this special time is called “proper time” and it’s actually the shortest time that any interval might have as viewed from any frame. It’s often given the name, <span class="math notranslate nohighlight">\(\tau\)</span> and the frame of reference within which it’s operative is called the Proper Frame.</p></li>
+<li><p>Moe and Ossie are in two different, co-moving frames of reference and they both have strobe lights manufactured identically. So they would each measure in their own frames, the same proper time interval between each flash. But because of Time Dilation, if Moe is watching Ossie go by, he’d say that Ossie’s strobe is slower than his. At the same time, Ossie is watching Moe go by in the other direction and <em>he’d also say</em> that Moe’s strobe is going slower! Who is right? They both are.</p></li>
+</ol>
+<div class="warning admonition">
+<p class="admonition-title">  Wait. Hold the phone. They would both say that other’s clock is running slow?  <br></p>
+<p><strong>Glad you asked:</strong> Yes. If they didn’t, then one would be able to distinguish one frame from the other, but that would violate the First Principle. Both frames are equally valid and are reciprocal in their adjudication of time intervals.</p>
+</div>
+<div class="important admonition">
+<p class="admonition-title">  Time between frames.  <br></p>
+<p>Time is relative between two co-moving, intertial frames of reference. There is no “right” time.</p>
+</div>
+<p>This leads to the famous Twin Paradox, which is one of a number of “paradoxes” involving Special Relativity.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The so-called paradoxes of Special Relativity are really not paradoxical. They’re circumstances that seem to be not possible – according to your common sense – but when analyzed strictly from within the rules of Relativity, turn out to be the case and internally consistent within the theory.</p>
+</div>
+<div class="danger admonition">
+<p class="admonition-title">  Please answer question 4  📺</p>
+<p><a href="https://loncapa.msu.edu//tiny/msu/fkkxjl"  target="_blank">Clocks</a></p>
+</div>
+<div class="danger admonition">
+<p class="admonition-title">  Please answer question 5  📺</p>
+<p><a href="https://loncapa.msu.edu//tiny/msu/Wv3WP"  target="_blank">Spaceships clocks</a></p>
+</div>
+</section>
+<section id="twin-paradox">
+<h2>Twin “Paradox”<a class="headerlink" href="#twin-paradox" title="Permalink to this heading">#</a></h2>
+<p>Herman and Blanche are twins, one of whom is adventurous and the other of whom is a home-body. Blanche is eager for space travel and blasts off from Florida in a fancy spaceship that travels at half the speed of light. In the Home frame – Earth, where Herman resides – Blanche has been gone for 20 years and comes home. They find upon reuniting that Blanche has aged 17.3 years, while Herman has aged 20 years.</p>
+<p>This is called the Twin Paradox, and like the other paradoxes of Special Relativity, it’s not a paradox at all. But it is strange.</p>
+<div class="warning admonition">
+<p class="admonition-title">  Wait. Wouldn’t you think the Blanche (in the spaceship) would see Herman (on Earth) flying away from her at half the speed of light and so upon reuniting wouldn’t she be older, rather than younger? Isn’t that a contradiction?  <br></p>
+<p><strong>Glad you asked:</strong> That’s a great question and is in line with decades of both misunderstanding and just plain wrong explanations. Let me explain without equations.</p>
+</div>
+<p>Notice that Herman’s Home frame never deviates course. He remains in one frame for the entirety of their separation. What about Blanche?</p>
+<p>She travels in one direction away from Earth and her brother for 8.6 years (half of that 17.3 years from above) at <span class="math notranslate nohighlight">\(u=0.5c\)</span>  in her frame. When it’s time for her to go back to Earth, she has to <em>catch up</em> with Earth, which has been separating for that time. So she must travel back at <span class="math notranslate nohighlight">\(0.8c\)</span> in order to catch up.</p>
+<p>So Blanche actually occupies two entirely different reference frames, while Herman never deviates from the single, boring Earth reference frame. So the two situations are not symmetric at all. (Sometimes an attempt to explain this sticks in the obvious, but irrelevant observation that in order to speed up and slow down multiple times in her trip, Blanche’s journey is not describable using Special Relativity alone. Because accelerating frames are involved. That’s not the explanation at all.)</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./docs_original/jupyter_execute/relativity"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spoiler-time-dilation">Spoiler: Time Dilation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-does-time-dilation-mean">What Does Time Dilation Mean?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#twin-paradox">Twin “Paradox”</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Raymond Brock
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

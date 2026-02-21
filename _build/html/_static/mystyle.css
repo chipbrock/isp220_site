@@ -1,0 +1,52 @@
+html {
+/*
+font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+/* 	font-family: sans-serif; */
+/* 	font-family: sans-serif; */
+/*
+  font-size: 16px;
+    line-height: 1.5;
+*/
+/* 	like newsprint */
+/*
+    font-family: "PT Serif", 'Times New Roman', Times, serif;
+	color: #1f0909;
+	line-height: 1.5em;
+*/
+}
+
+/*
+ 	p {  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+ */
+ 	p {    
+/* 	 	color: #1f0909; */
+/*     font-weight: 500; */
+    font-size: 1.1rem;
+/*     line-height: 1.5rem; */
+/*
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    padding-right: 0;
+    vertical-align: baseline;
+*/
+
+*/
+}
+
+/*
+.math.inline .MathJax  {
+  font-size: 1.5rem !important;
+}
+*/
+.toc-item a {
+  white-space: normal; /* Allows the line break to take effect */
+}
+
+.toc-item a br {
+  display: block; /* Forces the <br> tag to behave as a block element */
+  margin-bottom: 0.5em; /* Optional: Adjust spacing after the break */
+}
+.mjx-display {
+  font-size: 1.5em; /* Adjust the value as needed */
+  line-height: 1.2; /* Optional: Adjust line height if needed */
+}

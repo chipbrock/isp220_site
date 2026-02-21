@@ -1,0 +1,1070 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>18.2. Working Our Way toward Relativistic Energy &#8212; Quarks, Spacetime, and the Big Bang</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.4cbf315f70debaebd550c87a6162cf0f.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystyle.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 120}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'relativity/J-180_SpecialRelativity_4_S2';</script>
+    <link rel="canonical" href="https://chipbrock.github.io/isp220_site/relativity/J-180_SpecialRelativity_4_S2.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="18.3. The Rubber Meets the Road: Particle Creation and Potential Energies" href="J-180_SpecialRelativity_4_S3.html" />
+    <link rel="prev" title="18.1. A Little Bit of Minkowski" href="J-180_SpecialRelativity_4_S1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Quarks, Spacetime, and the Big Bang</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to Quarks, Spacetime, and the Big Bang!
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Foundations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../beginning/J-010_me_S0.html">1. Lesson 1: A Little Bit About This On-line Text</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../beginning/J-010_me_S1.html">1.1. What Quarks, Spacetime, and the Big Bang Isn’t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../beginning/J-010_me_S2.html">1.2. What Quarks, Spacetime, and the Big Bang Is</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../beginning/J-010_me_S3.html">1.3. The Great Scientist Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../beginning/J-010_me_S4.html">1.4. How I Think About You and Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../beginning/J-010_me_S5.html">1.5. How Deep Do We Go?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../beginning/J-010_me_S6.html">1.6. Let’s Go!</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../beginning/J-020_preface_S0.html">2. Lesson 2: Once Upon a Time…</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../beginning/J-035_what_you_know_S0.html">3. Lesson 3: What I’ll Bet You Know Already</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../beginning/J-035_what_you_know_S1.html">3.1. Remembering Motion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../beginning/J-035_what_you_know_S2.html">3.2. Some Mathematics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../beginning/J-035_what_you_know_S3.html">3.3. Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../beginning/J-035_what_you_know_S4.html">3.4. Matter</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../math/J-040_math_g_S0.html">4. Lesson 4: Mathematics, The M Word</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../math/J-040_math_g_S1.html">4.1. A Little Bit of Descartes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/J-040_math_g_S2.html">4.2. The M Word</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/J-040_math_g_S3.html">4.3. Functions, the QS&amp;BB Way</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/J-040_math_g_S4.html">4.4. A Gentle Review 1: Skills You’ll Frequently Need</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/J-040_math_g_S5.html">4.5. Geometry: Vectors, Curves…Formulas From Your Past?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/J-040_math_g_S6.html">4.6. A Gentle Review 2: Skills for Only a Few Times</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/J-040_math_g_S7.html">4.7. What to Remember from Lesson 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S0.html">5. Lesson 5: <br/>Motion, Getting From Here to There</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S1.html">5.1. A Little Bit of Galileo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S2.html">5.2. The Medieval Version of Here to There: A Little Bit of Aristotle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S3.html">5.3. Getting From Here to There: At Constant Speed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S4.html">5.4. A Model for Motion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S5.html">5.5. Multiplication and Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S6.html">5.6. Now For Something Completely Different: Feynman Diagrams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S7.html">5.7. Back to Galileo: Acceleration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S8.html">5.8. The Equations of Constant Acceleration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S9.html">5.9. Acceleration, In Everyday Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S10.html">5.10. Special Kinds of Acceleration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S11.html">5.11. The Pendulum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S12.html">5.12. Going In the Right Direction!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S13.html">5.13. Projectiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S14.html">5.14. The Beginning of Physics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S15.html">5.15. What to Remember from Lesson 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/J-060_MechanicsMomentum_2_S0.html">6. Lesson 6: <br/>The Big Mo, Force and Momentum</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/J-060_MechanicsMomentum_2_S1.html">6.1. A Little Bit of Newton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/J-060_MechanicsMomentum_2_S2.html">6.2. Impulse: Getting Going</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/J-060_MechanicsMomentum_2_S3.html">6.3. Newton’s Mass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/J-060_MechanicsMomentum_2_S4.html">6.4. The “Quantity of Motion”: Momentum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/J-060_MechanicsMomentum_2_S5.html">6.5. Newton’s Famous Three laws</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/J-060_MechanicsMomentum_2_S6.html">6.6. Newton’s Second law</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/J-060_MechanicsMomentum_2_S7.html">6.7. Weight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/J-060_MechanicsMomentum_2_S8.html">6.8. Finally, Nothing: Forces in Balance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/J-060_MechanicsMomentum_2_S9.html">6.9. Circular Motion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/J-060_MechanicsMomentum_2_S10.html">6.10. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../collisions/J-070_Collisions_2_S0.html">7. Lesson 7: Collisions, Banging Things Together</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../collisions/J-070_Collisions_2_S1.html">7.1. A Little Bit of Huygens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collisions/J-070_Collisions_2_S2.html">7.2. Varieties of Collisions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collisions/J-070_Collisions_2_S3.html">7.3. Ideal Collisions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collisions/J-070_Collisions_2_S4.html">7.4. Quantum-like Collisions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collisions/J-070_Collisions_2_S5.html">7.5. Impulse and Momentum Conservation and the Third law</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collisions/J-070_Collisions_2_S6.html">7.6. The Simplest Collision of All, Everyday and Quantum Mechanically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collisions/J-070_Collisions_2_S7.html">7.7. Collision Diagrams: Same Song, Different Verse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collisions/J-070_Collisions_2_S8.html">7.8. Algebra by Thermometers!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collisions/J-070_Collisions_2_S9.html">7.9. Two and More Dimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collisions/J-070_Collisions_2_S10.html">7.10. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../energy/J-080_energy_g_S0.html">8. Lesson 8:  Energy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../energy/J-080_energy_g_S1.html">8.1. Ability to Do Damage: Kinetic Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../energy/J-080_energy_g_S2.html">8.2. Work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../energy/J-080_energy_g_S3.html">8.3. That Stop Shot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../energy/J-080_energy_g_S4.html">8.4. Energy Conservation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../energy/J-080_energy_g_S5.html">8.5. Eager to Do Damage: Potential Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../energy/J-080_energy_g_S6.html">8.6. Okay, But What Is It…Really?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../energy/J-080_energy_g_S7.html">8.7. The Exchange of Potential and Kinetic Energies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../energy/J-080_energy_g_S8.html">8.8. Energy and Momentum, From 50,000 Feet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../energy/J-080_energy_g_S9.html">8.9. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../cosmology/J-090_Cosmology_One_S0.html">9. Lesson 9: Early Cosmology</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-090_Cosmology_One_S1.html">9.1. A Little Bit of Kepler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-090_Cosmology_One_S2.html">9.2. Ancient Astronomy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-090_Cosmology_One_S3.html">9.3. Greeks, Measuring Stuff</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-090_Cosmology_One_S4.html">9.4. Putting the Sun Where It (almost) Belongs: Copernicus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-090_Cosmology_One_S5.html">9.5. Revolutionibus and Scandal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-090_Cosmology_One_S6.html">9.6. Astronomy, If It Ain’t Baroque, Don’t Fix It: Tycho</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-090_Cosmology_One_S7.html">9.7. Kepler’s Battle With Mars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-090_Cosmology_One_S8.html">9.8. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_2_g_S0.html">10. Lesson 10: Galileo’s Astronomy and Newton’s Gravitation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_2_g_S1.html">10.1. A Little Bit More of Galileo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_2_g_S2.html">10.2. What Galileo Saw!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_2_g_S3.html">10.3. The Apple Moment: Newton’s Gravity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_2_g_S4.html">10.4. What’s the Moon’s Centripetal Acceleration?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_2_g_S5.html">10.5. Now Think Big!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_2_g_S6.html">10.6. Universal Gravitation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_2_g_S7.html">10.7. The Gravitation Constant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_3_g_S8.html">10.8. Gravitational Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_3_g_S9.html">10.9. Three Problems for Newton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_3_g_S10.html">10.10. Cosmology Begins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_2_g_S11.html">10.11. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../e_and_m/J-110_ElectromagnetismCharges_2_S0.html">11. Lesson 11: Charge It! Charges and Magnets</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-110_ElectromagnetismCharges_2_S1.html">11.1. A Little of Gilbert</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-110_ElectromagnetismCharges_2_S2.html">11.2. Magnetism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-110_ElectromagnetismCharges_2_S3.html">11.3. Electricity: Poor Richard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-110_ElectromagnetismCharges_2_S4.html">11.4. Forces from Electricity: Coulomb’s Law</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-110_ElectromagnetismCharges_2_S5.html">11.5. Forces from Currents: Electromagnetism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-110_ElectromagnetismCharges_2_S6.html">11.6. Inverse Square “laws”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-110_ElectromagnetismCharges_2_S7.html">11.7. Modern Ideas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-110_ElectromagnetismCharges_2_S8.html">11.8. What to Remember from Lesson 11</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../e_and_m/J-120_Faraday_1_S0.html">12. Lesson 12: Faraday’s Experiments and An Extraordinary Idea</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-120_Faraday_1_S1.html">12.1. A Little Bit of Faraday</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-120_Faraday_1_S2.html">12.2. Faraday’s Experiments in Electricity and Magnetism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-120_Faraday_1_S3.html">12.3. Induction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-120_Faraday_1_S4.html">12.4. The Field</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-120_Faraday_1_S5.html">12.5. Faraday’s Health</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-120_Faraday_1_S6.html">12.6. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../e_and_m/J-130_FaradayFields_1_S0.html">13. Lesson 13: Faraday’s E&amp;M Fields</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-130_FaradayFields_1_S1.html">13.1. A Tiny Bit More of Faraday</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-130_FaradayFields_1_S2.html">13.2. The Electric Field</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-130_FaradayFields_1_S3.html">13.3. The Revolutionary Idea of a Field</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-130_FaradayFields_1_S4.html">13.4. Electric Field for Other Configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-130_FaradayFields_1_S5.html">13.5. Energy In Electric Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-130_FaradayFields_1_S6.html">13.6. Electron Volts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-130_FaradayFields_1_S7.html">13.7. Magnetic Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-130_FaradayFields_1_S8.html">13.8. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S0.html">14. Lesson 14: Waves and Maxwell’s Fields</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S1.html">14.1. A Little Bit of Maxwell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S2.html">14.2. Wave Goodbye</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S3.html">14.3. Maxwell’s Idea of the  Field: Maxwell’s Equations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S4.html">14.4. The Jelly of the Ether</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S5.html">14.5. The Speed of Light, Old School</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S6.html">14.6. Maxwell’s Insight and Electromagnetic Waves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S7.html">14.7. A Modern Summary of Maxwell’s Results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S8.html">14.8. So What Gets an EM Wave Going?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S9.html">14.9. Charged Particles in Electromagnetic Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S10.html">14.10. The Lorentz Force, Broken Down</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S11.html">14.11. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Relativity</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="J-150_SpecialRelativity_1_S0.html">15. Lesson 15: Special Relativity, 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="J-150_SpecialRelativity_1_S1.html">15.1. A Little Bit About Michelson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-150_SpecialRelativity_1_S2.html">15.2. That Zero</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-150_SpecialRelativity_1_S3.html">15.3. Moving Through The Ether</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-150_SpecialRelativity_1_S4.html">15.4. The Fallout of Michelson’s Null Result</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-150_SpecialRelativity_1_S5.html">15.5. Getting Serious: The Michelson-Morley Experiment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-150_SpecialRelativity_1_S6.html">15.6. Michelson and Chicago</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-150_SpecialRelativity_1_S7.html">15.7. More Trouble With Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-150_SpecialRelativity_1_S8.html">15.8. Frames of Reference, For Real</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-150_SpecialRelativity_1_S9.html">15.9. What to Remember from Lesson 15</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="J-160_SpecialRelativity_2_S0.html">16. Lesson 16: <br/>Special Relativity, 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="J-160_SpecialRelativity_2_S1.html">16.1. A Little Bit About Einstein</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-160_SpecialRelativity_2_S2.html">16.2. A Different Way Out: Einstein’s Relativity Paper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-160_SpecialRelativity_2_S3.html">16.3. What Was the Cause of That Storm? The Second Postulate’s Implications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-160_SpecialRelativity_2_S4.html">16.4. Queue: The Soapbox.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-160_SpecialRelativity_2_S5.html">16.5. Double Down on the Second Postulate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-160_SpecialRelativity_2_S6.html">16.6. Time Dilation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-160_SpecialRelativity_2_S7.html">16.7. Length Contraction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-160_SpecialRelativity_2_S8.html">16.8. Let’s Summarize</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-160_SpecialRelativity_2_S9.html">16.9. Is Relativity the Case?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-160_SpecialRelativity_2_S10.html">16.10. What to Remember from Lesson 16</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="J-170_SpecialRelativity_3_S0.html">17. Lesson 17: <br/>Special Relativity, 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="J-170_SpecialRelativity_3_S1.html">17.1. A Little Bit about Lorentz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-170_SpecialRelativity_3_S2.html">17.2. Lorentz Transformations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-170_SpecialRelativity_3_S3.html">17.3. Maxwell’s Equations, Revisited</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-170_SpecialRelativity_3_S4.html">17.4. Speeds in Special Relativity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-170_SpecialRelativity_3_S5.html">17.5. What to Remember from Lesson 17</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="J-180_SpecialRelativity_4_S0.html">18. Lesson 18: <br/>Special Relativity, 4</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="J-180_SpecialRelativity_4_S1.html">18.1. A Little Bit of Minkowski</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">18.2. Working Our Way toward Relativistic Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-180_SpecialRelativity_4_S3.html">18.3. The Rubber Meets the Road: Particle Creation and Potential Energies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-180_SpecialRelativity_4_S4.html">18.4. Isn’t Anything Constant??</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-180_SpecialRelativity_4_S5.html">18.5. Spacetime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-180_SpecialRelativity_4_S6.html">18.6. The Aftermath</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-180_SpecialRelativity_4_S7.html">18.7. Is Relativity The Case?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-180_SpecialRelativity_4_S8.html">18.8. What To Remember from Lesson 18</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Frelativity/J-180_SpecialRelativity_4_S2.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/relativity/J-180_SpecialRelativity_4_S2.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Working Our Way toward Relativistic Energy</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relativistic-momentum">18.2.1. Relativistic Momentum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-einstein-thought-experiment">18.2.2. An Einstein Thought Experiment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approximating-functions">18.2.3. Approximating Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einstein-s-energy-equation-through-the-back-door">18.2.4. Einstein’s Energy Equation, Through the Back Door</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#two-things-to-worry-about">18.2.5. Two Things to Worry About</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#remember-how-we-got-here">18.2.6. Remember How We Got Here?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-mass-anyway">18.2.7. What Is Mass, Anyway?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#momentum-in-relativity">18.2.7.1. Momentum In Relativity</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="working-our-way-toward-relativistic-energy">
+<h1><span class="section-number">18.2. </span>Working Our Way toward Relativistic Energy<a class="headerlink" href="#working-our-way-toward-relativistic-energy" title="Permalink to this heading">#</a></h1>
+<p>At the end of the last lesson, we crept up on the notion that the speed of an object being pushed at a constant value changes, but not linearly, so that it never exceeds the speed of light. Here’s a cartoonish sketch of that summarizes what seems to be going on.</p>
+<p>What we had is a constant force pushing on a mass, creating a momentum, and so a speed.</p>
+<img alt="_images/relativity/block_limited.png" class="align-left" src="_images/relativity/block_limited.png" />
+<BR CLEAR="all">
+<p>Now, let’s compare the Newtonian experience (rather, assumptions) with the relativistic experience.</p>
+<img alt="_images/relativity/limited.png" class="align-left" src="_images/relativity/limited.png" />
+<BR CLEAR="all">
+<p>In (a) we have the Newtonian notion of a fixed mass and an unlimited speed and so an unlimited momentum. In (b) we have the relativistic situation in which we know that the speed is limited and there’s no limitation on the momentum. So how does that happen? The mass must be unlimited. Not constant, as in the Newtonian definition.</p>
+<img alt="_images/relativity/screenshot_2224.png" class="align-left" src="_images/relativity/screenshot_2224.png" />
+<BR CLEAR="all">
+<p>Mass is going to become a very strange thing.</p>
+<blockquote>
+<div><p>Remember that mass for Newton was problematic. It was a definition that was circularly defined in terms of density. How you measure it presumes that you know how to measure acceleration and force…without the mass. Circular. Relativity is the opening salvo against the naive notion of mass from Newton and we’ll see that with the Higgs Boson discovery in 2012, our ideas of mass changed again…to be even more strange.</p>
+</div></blockquote>
+<section id="relativistic-momentum">
+<h2><span class="section-number">18.2.1. </span>Relativistic Momentum<a class="headerlink" href="#relativistic-momentum" title="Permalink to this heading">#</a></h2>
+<p>Momentum is still:</p>
+<div class="warning admonition">
+<p class="admonition-title">  Pencils Out! 🖋 📓</p>
+<div class="math notranslate nohighlight">
+\[
+p = m\times \frac{\text{a change in distance}}{\text{a change in time}} = m \frac{\Delta x_H}{\Delta t_H} \nonumber
+\]</div>
+<p>But by now you know the song: that numerator and denominator depend on the frame and so a new kind of momentum – relativistic momentum – is required. I’ll just state it here:</p>
+<div class="math notranslate nohighlight">
+\[
+p = m\gamma u
+\]</div>
+<p>Looks familiar, but there’s the <span class="math notranslate nohighlight">\(\gamma\)</span> function, which tends towards <span class="math notranslate nohighlight">\(1\)</span> when <span class="math notranslate nohighlight">\(u\)</span> is very small, so we get back “regular” momentum.</p>
+</div>
+</section>
+<section id="an-einstein-thought-experiment">
+<h2><span class="section-number">18.2.2. </span>An Einstein Thought Experiment<a class="headerlink" href="#an-einstein-thought-experiment" title="Permalink to this heading">#</a></h2>
+<p>Let’s follow one of Einstein’s typically imaginative thought experiments that he suggested in his original 1905 fourth paper. The T-shirt equation paper. In order to appreciate it, I need to tell you something that he postulated in his first 1905 paper that was on light quanta – that light consists of little particles that he called “quanta” and which were named “photons” in 1925 by someone else. The thing that we need from this idea (which we will talk about a lot later) is that these little particles carry momentum.</p>
+<p>So inside a box is a source of light (photons) at the left and an absorber of photons on the right. We start with the box sitting still, minding its own business.</p>
+<img alt="_images/relativity/box1.png" class="align-left" src="_images/relativity/box1.png" />
+<BR CLEAR="all">
+<p>Now the bulb is turned on and light begins to stream away from it, that is, photons carry momentum to the right.</p>
+<img alt="_images/relativity/box2.png" class="align-left" src="_images/relativity/box2.png" />
+<BR CLEAR="all">
+<p>So momentum is now imbalanced to the right, unless the box itself moves to the left with the same, but oppositely directed value of momentum. It recoils.</p>
+<p>So from the outside, you see this box suddenly begin to lurch to the left! Then, when the photons strike the absorber on the right-hand side of the box (perfectly absorbing so that there’s no reflection)…the box suddenly stops!</p>
+<img alt="_images/relativity/box3.png" class="align-left" src="_images/relativity/box3.png" />
+<BR CLEAR="all">
+<p>Einstein analyzed this event and showed that the center of mass of the box rearranged itself and that therefore the photon has to behave as if it has a mass.</p>
+<p>Seriously. In the first paper (and every other paper anyone has written since!) the photon is an object with zero mass. And yet, this simple head-experiment concludes that the light has an energy – even Maxwell knew about electromagnetic waves carrying energy. But since light has momentum, we must interpret the situation to suggest that the photon’s energy leads to a second conclusion that suggest that energy is mass-like. That’s a lot to swallow.</p>
+</section>
+<section id="approximating-functions">
+<h2><span class="section-number">18.2.3. </span>Approximating Functions<a class="headerlink" href="#approximating-functions" title="Permalink to this heading">#</a></h2>
+<p>There are a number of ways to get to the T-shirt equation and most require calculus which I’ll not do in <em>QS&amp;BB</em>. I want to sneak up on it with a plausibility argument, rather than a direct proof. In &#64;ref(#lessonmath) I introduced the notion of approximating a function’s shape by successively adding together a string of functions, each one getting you closer and closer to the full function. This was Newton’s idea. What I did in that lesson was look at the function</p>
+<div class="math notranslate nohighlight">
+\[
+f(x) = \frac{1}{1-x} \nonumber
+\]</div>
+<p>and showed that it can be represented as the series</p>
+<div class="math notranslate nohighlight">
+\[
+f(x) = \frac{1}{1-x} = 1+x+x^2 + x^3 +... \nonumber
+\]</div>
+<p>the dot-dot-dot means that this progression continues to an infinite number of terms and that when you add them all up you get back <span class="math notranslate nohighlight">\(\dfrac{1}{1-x}\)</span>. Almost magical.</p>
+<p>Here’s what that looks like:</p>
+<img alt="_images/relativity/binom_ex.png" class="align-left" src="_images/relativity/binom_ex.png" />
+<BR CLEAR="all">
+<p>Notice a couple of things. First, the full function is the top, bold red curve. Second, notice that each curve in the series does indeed get closer and closer to the desired function. It’s going to take a lot of them to get there – an infinite number of them.</p>
+<div class="warning admonition">
+<p class="admonition-title">  Pencils Out! 🖋 📓</p>
+<p>Finally, notice that for small <span class="math notranslate nohighlight">\(x\)</span>, say below <span class="math notranslate nohighlight">\(x=0.2\)</span> the first two terms, <span class="math notranslate nohighlight">\(1+x\)</span> do a pretty good job. So in practical terms, if you’re sure that your <span class="math notranslate nohighlight">\(x\)</span>’s are going to be less than that value you don’t have to use the whole function, you can get by with just <span class="math notranslate nohighlight">\(1+x\)</span>.</p>
+<p>So, with that reminder…we have a function that’s in every relativistic equation, namely, <span class="math notranslate nohighlight">\(\gamma\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma = \frac{1}{\sqrt{1-\beta^2}} \nonumber
+\]</div>
+<p>and maybe you know where I’m going. We can indeed express this function in an infinite series and it would be:</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma = \frac{1}{\sqrt{1-\beta^2}} = 1+\frac{\beta^2}{2}+\frac{3\beta^4}{8}+\frac{5\beta^6}{16}+...
+\]</div>
+<p>Here it is plotted:</p>
+<img alt="_images/relativity/binom_gamma.png" class="align-left" src="_images/relativity/binom_gamma.png" />
+<BR CLEAR="all">
+<p>where I’ve emphasized only the first two terms. Again, if we are only interested in very low <span class="math notranslate nohighlight">\(\gamma\)</span>’s we can get away with just the first couple of terms and we’ve done a pretty good job of approximating the whole relativistic gamma function. Knowing that “regular life” is pretty Newtonian, that part of the gamma function should do a pretty good job for barely relativistic situations.</p>
+</div>
+</section>
+<section id="einstein-s-energy-equation-through-the-back-door">
+<h2><span class="section-number">18.2.4. </span>Einstein’s Energy Equation, Through the Back Door<a class="headerlink" href="#einstein-s-energy-equation-through-the-back-door" title="Permalink to this heading">#</a></h2>
+<p>Let’s play with that term now and see if we can gain some insight.</p>
+<div class="warning admonition">
+<p class="admonition-title">  Pencils Out! 🖋 📓</p>
+<p>This is a pencil-out activity. Look at the first two terms in the <span class="math notranslate nohighlight">\(\gamma\)</span> expansion:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\gamma \approx&amp; 1 + \beta^2/2 \\
+\gamma =&amp; 1 + \frac{1}{2}\frac{u^2}{c^2}
+\end{align*}
+\end{split}\]</div>
+<p>Look at the second term. This is really suspiciously like the classical kinetic energy form, <span class="math notranslate nohighlight">\(K=\frac{1}{2}mv^2\)</span>, right? Let’s run with this and see what happens. In order to nudge it along, let’s multiply by <span class="math notranslate nohighlight">\(m\)</span> and by <span class="math notranslate nohighlight">\(c^2\)</span>. That would do it, right?</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\gamma =&amp; 1+\frac{1}{2}\frac{u^2}{c^2} \\
+mc^2\gamma =&amp; mc^2 + mc^2\frac{1}{2}\frac{u^2}{c^2} \\
+m\gamma c^2 =&amp; mc^2 + \frac{1}{2}mu^2
+\end{align*}
+\end{split}\]</div>
+<p>By now we’re used to the idea that slow objects’ modeling are an approximation to the complete relativistic objects’ form. We’re obviously in a slow-ish format here by keeping only the first two terms of the <span class="math notranslate nohighlight">\(\gamma\)</span> function. So we isolated the “regular” kinetic energy piece on the right and so we also know that <em>whatever is left in the other two terms are also energy terms</em>:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(m\gamma c^2\)</span> is some kind of energy</p></li>
+<li><p><span class="math notranslate nohighlight">\(mc^2\)</span> is another kind of energy</p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{1}{2}mu^2\)</span> is the familiar kind of energy of motion, kinetic energy</p></li>
+</ul>
+<p>This is a fundamental change in how we think about energy. What we’ve created through the back door is a new kind of energy:</p>
+<ul class="simple">
+<li><p>Total energy of an object <span class="math notranslate nohighlight">\(=\)</span> its energy of mass <span class="math notranslate nohighlight">\(+\)</span> its energy of motion</p></li>
+</ul>
+<p>Even if the object were not moving, <em>it would still have energy in this picture</em>. In fact, all of energy can be described by this little formula - potential energy, chemical energy, nuclear energy, electromagnetic radiation energy, the whole shebang energy.</p>
+<p>Here’s our accounting:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(E_T =\)</span> total energy of an object <span class="math notranslate nohighlight">\(= m\gamma c^2\)</span>, first formulation</p></li>
+<li><p><span class="math notranslate nohighlight">\(E_m =\)</span> mass energy of an object = <span class="math notranslate nohighlight">\(mc^2\)</span></p></li>
+</ul>
+<p>The T-shirt equation:</p>
+<img alt="_images/relativity/t-shirt.png" class="align-left" src="_images/relativity/t-shirt.png" />
+<BR CLEAR="all">
+<p>I’ve left out the kinetic energy here because my back door approach to this was for non-relativistic motion, so our original <span class="math notranslate nohighlight">\(\frac{1}{2}mu^2\)</span> term was relevant. But the fully relativistic kinetic energy is different and we can simply derive its form from what we’ve got by generally calling it “<span class="math notranslate nohighlight">\(K\)</span>.”</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+E_T =&amp; E_m + K \\
+K =&amp; E_T - E_m \\
+K =&amp; m\gamma c^2 - mc^2 \\
+K =&amp; mc^2(\gamma -1)
+\end{align*}
+\end{split}\]</div>
+<p>So our inventory is:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(E_T =\)</span> total energy of an object <span class="math notranslate nohighlight">\(= m\gamma c^2\)</span>, first formulation</p></li>
+<li><p><span class="math notranslate nohighlight">\(E_m =\)</span> mass energy of an object = <span class="math notranslate nohighlight">\(mc^2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(K =\)</span> energy of motion <span class="math notranslate nohighlight">\(=\)</span> <span class="math notranslate nohighlight">\(mc^2(\gamma -1)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(p = m\gamma u\)</span> <span class="math notranslate nohighlight">\(=\)</span> relativistic momentum</p></li>
+</ul>
+<div class="danger admonition">
+<p class="admonition-title">  Have a look at a deeper explanation 1  🖋 📓</p>
+<p><a href="../examples/relativity/FILE.html" target="_blank">Derivation of energy relation</a></p>
+</div>
+</div>
+<p>With a little bit of algebra, we can write our second form of the total energy:</p>
+<div class="math notranslate nohighlight">
+\[
+E_T^2 = (mc^2)^2 + (pc)^2
+\]</div>
+<p>and we can understand Einstein’s little game of the box with the light.</p>
+<div class="danger admonition">
+<p class="admonition-title">  Please study example 1  🖋 📓</p>
+<p><a href="../examples/relativity/Total_E_1_R4_E1.html" target="_blank">derivation of the total energy</a></p>
+</div>
+<p>Remember, he had to conclude that if light carries momentum, which Maxwell knew, then it has to behave as if it has a mass, which is not strictly true. In Equation <code class="xref eq docutils literal notranslate"><span class="pre">totalE</span></code> we see how that works. If light quanta are massless, and they are, the total energy is not zero, it’s:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+E_T^2(\text{for anything}) &amp;= (mc^2)^2 + (pc)^2 \text{ but for a massless photon where } m=0: \\
+E_T(\text{photon}) &amp;= pc
+\end{align*}
+\end{split}\]</div>
+<p>We can see this in a visual way using Pythagoras’ theorem since</p>
+<div class="math notranslate nohighlight">
+\[
+E_T^2 = (mc^2)^2 + (pc)^2  \nonumber
+\]</div>
+<img alt="_images/relativity/energytriangle.png" class="align-left" src="_images/relativity/energytriangle.png" />
+<BR CLEAR="all">
+<p>For different kinds of objects, as the mass leg gets smaller and smaller, the hypothenus gets closer and closer to the horizontal leg.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>So what does one do when visiting a friend at UCLA who was the Science Advisor for the television program, The Big Bang Theory? And he hands you a marker and your own on-air whiteboard? Why you tell the world how to expand the gamma function. That’s what.</p>
+</div>
+<img alt="_images/relativity/bbt.png" class="align-left" src="_images/relativity/bbt.png" />
+<BR CLEAR="all">
+<div class="danger admonition">
+<p class="admonition-title">  Please study example 2  🖋 📓</p>
+<p><a href="../examples/relativity/Nimitz_penny_1_R4_E3.html" target="_blank">Penny for your thoughts</a></p>
+</div>
+</section>
+<section id="two-things-to-worry-about">
+<h2><span class="section-number">18.2.5. </span>Two Things to Worry About<a class="headerlink" href="#two-things-to-worry-about" title="Permalink to this heading">#</a></h2>
+<p>There are two issues buried inside of the general total energy relation that merit attention:</p>
+<div class="math notranslate nohighlight">
+\[
+E_T^2 = (mc^2)^2 + (pc)^2 \nonumber
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thing 1.</strong> Remember that Einstein started his discussion with his quantum idea, which we’ll have to wait to learn more about. But I’ve already told you that the photon – the quantum of light – has no mass. Notice that this equation for energy accommodates that.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+E_T^2 \text{ for } m=&amp; 0 \text{ becomes } (pc)^2 \text{ so }\\
+E_T =&amp; pc
+\end{align*}
+\end{split}\]</div>
+<p>which is precisely what he suggested was the case for a single quantum of light in his first 1905 paper.</p>
+</div>
+<p>and</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thing 2.</strong> Remember that a square can have two roots, one positive and one negative. What about the total energy squared?</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+E_T^2 =&amp; (mc^2)^2 + (pc)^2 \text{ means that the roots can be } \\
+E_T =&amp; \pm \sqrt{(mc^2)^2 + (pc)^2}
+\end{align*}
+\end{split}\]</div>
+<p>What are we to make of a negative energy? Stay tuned. But this plagued efforts to create a quantum mechanics that was relativistic.</p>
+</div>
+<div class="danger admonition">
+<p class="admonition-title">  Please study example 3  🖋 📓</p>
+<p><a href="../examples/relativity/Estimate_gamma_1_R4_E2.html" target="_blank">How good is the approximation for gamma?</a></p>
+</div>
+</section>
+<section id="remember-how-we-got-here">
+<h2><span class="section-number">18.2.6. </span>Remember How We Got Here?<a class="headerlink" href="#remember-how-we-got-here" title="Permalink to this heading">#</a></h2>
+<p>I started worrying about inertia in the last lesson when we found that a constant force applied to a massive object would result in a constant acceleration (our example was <span class="math notranslate nohighlight">\(g\)</span>) but that the speed of that object would increase at a slower and slower rate, never passing <span class="math notranslate nohighlight">\(c\)</span>. Our notion of relativistic mass is a way to think about why that is the case. Since here, <span class="math notranslate nohighlight">\(m_R = \gamma m\)</span> it increases with speed through the relativistic gamma function:</p>
+<p>Remember to push Run:</p>
+<iframe src="https://trinket.io/embed/glowscript/f57b6366d6?outputOnly=true" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<p>So if you’re fortunate enough to be moving at 80% of the speed of light, your mass as viewed from a Home frame would be about 1.75 times your rest mass as you would “feel” in the Away frame. Food for thought, if you’re a particle physicist. Stay tuned.</p>
+<p>Particle accelerators? They operate in the high-end of gamma…here’s a useful example of the gamma region of interest:</p>
+<p>Remember to push Run:</p>
+<iframe src="https://trinket.io/embed/glowscript/3373e0a576?outputOnly=true" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="danger admonition">
+<p class="admonition-title">  Please answer question 1  📺</p>
+<p><a href="https://loncapa.msu.edu//tiny/msu/gmgg9M"  target="_blank">Precision practice with the plots</a></p>
+</div>
+</section>
+<section id="what-is-mass-anyway">
+<h2><span class="section-number">18.2.7. </span>What Is Mass, Anyway?<a class="headerlink" href="#what-is-mass-anyway" title="Permalink to this heading">#</a></h2>
+<p>Einstein’s fourth, less than three page 1905 paper in November, was entitled, <em>Does The Inertia Of A Body Depend Upon Its Energy Content?</em> and he worked out (with different names for the variables):</p>
+<blockquote>
+<div><p>“If a body gives off the energy E in the form of radiation, its mass diminishes by <span class="math notranslate nohighlight">\(m=\dfrac{E}{c^2}\)</span>.” And he closed with, “It is not impossible that with bodies whose energy-content is variable to a high degree (e.g. with radium salts) the theory may be successfully put to the test. If the theory corresponds to the facts, radiation conveys inertia between the emitting and absorbing bodies.”</p>
+</div></blockquote>
+<p>This. Is an extraordinary idea.  Any object with a mass has a special energy solely associated with that mass. “Mass-energy” is a common term for this and captures the notion succinctly. But “energy-mass” is also applicable as we saw for the massless photon  in the box! It had energy, but that energy conferred on the photon features that dynamically played the role of a mass.</p>
+<p>It’s often said – INCORRECTLY! – that mass can be converted into energy. Mass IS energy and energy IS mass. We can convert the units, but not the actual substance. The best analogy I can think of is currency.</p>
+<p>Today, $1 is convertible into 0.83 EURO. If I were to go into a shop in the Schiphol Airport in Amsterdam and purchase a magazine I could pay at the counter in dollars or I could pay in euros – both are readily acceptable in that airport. Their values are identical and indeed, colloquially we can convert dollars into euros and we would see visually the two currencies are represented by two different kinds of paper and coins. The <em>economic value</em> however is identical and the passage of one unit into the other is accomplished by a single conversion factor: 0.83. If I have 10 EURO, I can convert that into dollars:</p>
+<div class="math notranslate nohighlight">
+\[
+X \text{ USD} = (8.3 \times 10^{-1}) \times 10 \text{ EURO}= 8.3 \text{ USD.}\nonumber
+\]</div>
+<p>The conversion of mass and energy units functions the same way. The <em>value</em> of mass-energy is identical, and the conversion of units is accomplished by a single conversion factor as well: from <span class="math notranslate nohighlight">\(E=mc^2\)</span>, the conversion is</p>
+<div class="math notranslate nohighlight">
+\[
+c^2 = (3 \times 10^8)^2=9 \times 10^{16}. \nonumber
+\]</div>
+<p>(in the MKS system). A very big number! If I have a 10 kg object, I can convert that into Joules:</p>
+<div class="math notranslate nohighlight">
+\[
+x \text{ J} = (9 \times 10^{16})\times 10 \text{ kg} = 9 \times 10^{17} \text{ J.} \nonumber
+\]</div>
+<p>The size of this is hard to wrap your head around. The amount of energy trapped in even tiny masses is enormous.</p>
+<div class="warning admonition">
+<p class="admonition-title">  Pencils Out! 🖋 📓</p>
+<p>But there’s more to this than just the identification of energy with mass and <em>vise versa</em>. There’s also the interpretation of mass as not constant. From a silly little rearrangement from above:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+E_T =&amp; E_m + K = mc^2 + K\\
+K =&amp; = mc^2(\gamma -1) = m\gamma c^2 - mc^2 \\
+E_T =&amp; mc^2 + m\gamma c^2 - mc^2 = m\gamma c^2
+\end{align*}
+\end{split}\]</div>
+<p>So, another way of looking at the total energy of an object is to combine its <span class="math notranslate nohighlight">\(E_m = mc^2\)</span> with <span class="math notranslate nohighlight">\(K\)</span> to get:</p>
+<div class="math notranslate nohighlight">
+\[
+E_T = m\gamma c^2 \nonumber
+\]</div>
+<p>We’ve now got two “kinds” of mass: what we’ll call the “relativistic mass” and the “rest mass.” The latter is the mass of an object in its own rest frame, like proper time is the time that you read from the watch you’re wearing in your own rest frame. That we’ll call:</p>
+<div class="math notranslate nohighlight">
+\[
+\text{Rest mass } = m = E_m/c^2 \nonumber
+\]</div>
+<p>The former is what’s sometimes called the Relativistic mass:</p>
+<div class="math notranslate nohighlight">
+\[
+\text{Relativistic mass } = m_R = \gamma m \nonumber
+\]</div>
+<p>The Relativistic mass changes as the speed of a frame changes with respect to a Home observer. By a factor of <span class="math notranslate nohighlight">\(\gamma\)</span>.</p>
+<p>In our Home and Away notation, the masses are related as:</p>
+<div class="math notranslate nohighlight">
+\[
+\text{Relativistic mass } = m_H = \gamma m_A \nonumber
+\]</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is a controversial point. While there is no difference between two interpretations of mass, professional physicists do not use “relativistic mass” preferring to keep the idea of mass a constant quantity regardless of motion and deal exclusively with the total energy, <span class="math notranslate nohighlight">\(E_T\)</span>. I think that for our purposes, the relativistic mass is a very nice interpretation which carries a lot of insight along with it. So don’t tell my friends, okay?</p>
+</div>
+<section id="momentum-in-relativity">
+<h3><span class="section-number">18.2.7.1. </span>Momentum In Relativity<a class="headerlink" href="#momentum-in-relativity" title="Permalink to this heading">#</a></h3>
+<p>Remember that I introduced momentum for relativity as if it’s a definition. That’s not strictly the case, and again, it’s a calculus derivation so it’s not appropriate for this text. But we can circle back and retain our original idea of momentum as</p>
+<div class="math notranslate nohighlight">
+\[
+p=mv \nonumber
+\]</div>
+<p>by using the relativistic mass in this relation: <span class="math notranslate nohighlight">\(m_R = \gamma m\)</span> where <span class="math notranslate nohighlight">\(m\)</span> is the rest mass. Now we get the originally postulated relativistic momentum:</p>
+<div class="math notranslate nohighlight">
+\[
+p=m_Rv = m\gamma v \nonumber
+\]</div>
+<p>Remember, that conversion factor is enormous. We need an apple.</p>
+<img alt="_images/relativity/applemass.png" class="align-left" src="_images/relativity/applemass.png" />
+<BR CLEAR="all">
+<div class="warning admonition">
+<p class="admonition-title">  Pencils Out! 🖋 📓</p>
+<p>Remember that in this beloved example, our table is 1 meter above the ground and the apple has a mass of 0.1 kg. The kinetic energy when it hits the ground is 1 J if we approximate <span class="math notranslate nohighlight">\(g \approx 10\)</span> m/s<span class="math notranslate nohighlight">\(^2\)</span>. What is the energy trapped inside of the apple’s mass in comparison?</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+E_m =&amp; mc^2 \\
+E_m =&amp; (0.1)(3 \times 10^8)^2 \text{ J } = (0.1)(9 \times 10^{16}) \text{ J } \\
+E_m =&amp; 9 \times 10^{15} \text{ J }
+\end{align*}
+\end{split}\]</div>
+<p>…essentially <span class="math notranslate nohighlight">\(10^{16}\)</span> times its motion energy as it hits the floor.</p>
+</div>
+<p>Let’s go to an old-time particle accelerator – one in which protons are accelerated to only 95% of the speed of light.</p>
+<div class="danger admonition">
+<p class="admonition-title">  Please study example 4  🖋 📓</p>
+<p><a href="../examples/relativity/Spark_1_R4_E2.html" target="_blank">electrons from a big spark</a></p>
+</div>
+<div class="danger admonition">
+<p class="admonition-title">  Please answer question 2 📺</p>
+<p><a href="https://loncapa.msu.edu//tiny/msu/cMSPC"  target="_blank">increase of mass by protons in an accelerator</a></p>
+</div>
+<div class="danger admonition">
+<p class="admonition-title">  Please answer question 3  📺</p>
+<p><a href="https://loncapa.msu.edu//tiny/msu/ld0WG3"  target="_blank">Airplanes again</a></p>
+</div>
+<blockquote>
+<div><p>From this point on, when I refer to “mass,” I’ll mean the relativistic mass, <span class="math notranslate nohighlight">\(m_R\)</span>. If I mean the mass of an object inside of its own rest frame, I’ll explicitly refer to the “rest mass,” <span class="math notranslate nohighlight">\(m\)</span>.</p>
+</div></blockquote>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./relativity"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="J-180_SpecialRelativity_4_S1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">18.1. </span>A Little Bit of Minkowski</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="J-180_SpecialRelativity_4_S3.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">18.3. </span>The Rubber Meets the Road: Particle Creation and Potential Energies</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relativistic-momentum">18.2.1. Relativistic Momentum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-einstein-thought-experiment">18.2.2. An Einstein Thought Experiment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approximating-functions">18.2.3. Approximating Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einstein-s-energy-equation-through-the-back-door">18.2.4. Einstein’s Energy Equation, Through the Back Door</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#two-things-to-worry-about">18.2.5. Two Things to Worry About</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#remember-how-we-got-here">18.2.6. Remember How We Got Here?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-mass-anyway">18.2.7. What Is Mass, Anyway?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#momentum-in-relativity">18.2.7.1. Momentum In Relativity</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Raymond Brock
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

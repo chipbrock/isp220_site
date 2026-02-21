@@ -1,0 +1,718 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>The Big Mo, Force and Momentum &#8212; Quarks, Spacetime, and the Big Bang</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.4cbf315f70debaebd550c87a6162cf0f.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystyle.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 120}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'examples/mechanics/apple_1_E3';</script>
+    <link rel="canonical" href="https://chipbrock.github.io/isp220_site/examples/mechanics/apple_1_E3.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Quarks, Spacetime, and the Big Bang</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome to Quarks, Spacetime, and the Big Bang!
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Foundations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../beginning/J-010_me_S0.html">1. Lesson 1: A Little Bit About This On-line Text</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../beginning/J-010_me_S1.html">1.1. What Quarks, Spacetime, and the Big Bang Isn’t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../beginning/J-010_me_S2.html">1.2. What Quarks, Spacetime, and the Big Bang Is</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../beginning/J-010_me_S3.html">1.3. The Great Scientist Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../beginning/J-010_me_S4.html">1.4. How I Think About You and Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../beginning/J-010_me_S5.html">1.5. How Deep Do We Go?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../beginning/J-010_me_S6.html">1.6. Let’s Go!</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../beginning/J-020_preface_S0.html">2. Lesson 2: Once Upon a Time…</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../beginning/J-035_what_you_know_S0.html">3. Lesson 3: What I’ll Bet You Know Already</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../beginning/J-035_what_you_know_S1.html">3.1. Remembering Motion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../beginning/J-035_what_you_know_S2.html">3.2. Some Mathematics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../beginning/J-035_what_you_know_S3.html">3.3. Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../beginning/J-035_what_you_know_S4.html">3.4. Matter</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../math/J-040_math_g_S0.html">4. Lesson 4: Mathematics, The M Word</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../math/J-040_math_g_S1.html">4.1. A Little Bit of Descartes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../math/J-040_math_g_S2.html">4.2. The M Word</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../math/J-040_math_g_S3.html">4.3. Functions, the QS&amp;BB Way</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../math/J-040_math_g_S4.html">4.4. A Gentle Review 1: Skills You’ll Frequently Need</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../math/J-040_math_g_S5.html">4.5. Geometry: Vectors, Curves…Formulas From Your Past?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../math/J-040_math_g_S6.html">4.6. A Gentle Review 2: Skills for Only a Few Times</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../math/J-040_math_g_S7.html">4.7. What to Remember from Lesson 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../motion/J-050_motion_g_galileo2_S0.html">5. Lesson 5: <br/>Motion, Getting From Here to There</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../motion/J-050_motion_g_galileo2_S1.html">5.1. A Little Bit of Galileo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../motion/J-050_motion_g_galileo2_S2.html">5.2. The Medieval Version of Here to There: A Little Bit of Aristotle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../motion/J-050_motion_g_galileo2_S3.html">5.3. Getting From Here to There: At Constant Speed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../motion/J-050_motion_g_galileo2_S4.html">5.4. A Model for Motion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../motion/J-050_motion_g_galileo2_S5.html">5.5. Multiplication and Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../motion/J-050_motion_g_galileo2_S6.html">5.6. Now For Something Completely Different: Feynman Diagrams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../motion/J-050_motion_g_galileo2_S7.html">5.7. Back to Galileo: Acceleration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../motion/J-050_motion_g_galileo2_S8.html">5.8. The Equations of Constant Acceleration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../motion/J-050_motion_g_galileo2_S9.html">5.9. Acceleration, In Everyday Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../motion/J-050_motion_g_galileo2_S10.html">5.10. Special Kinds of Acceleration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../motion/J-050_motion_g_galileo2_S11.html">5.11. The Pendulum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../motion/J-050_motion_g_galileo2_S12.html">5.12. Going In the Right Direction!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../motion/J-050_motion_g_galileo2_S13.html">5.13. Projectiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../motion/J-050_motion_g_galileo2_S14.html">5.14. The Beginning of Physics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../motion/J-050_motion_g_galileo2_S15.html">5.15. What to Remember from Lesson 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../mechanics/J-060_MechanicsMomentum_2_S0.html">6. Lesson 6: <br/>The Big Mo, Force and Momentum</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../mechanics/J-060_MechanicsMomentum_2_S1.html">6.1. A Little Bit of Newton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mechanics/J-060_MechanicsMomentum_2_S2.html">6.2. Impulse: Getting Going</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mechanics/J-060_MechanicsMomentum_2_S3.html">6.3. Newton’s Mass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mechanics/J-060_MechanicsMomentum_2_S4.html">6.4. The “Quantity of Motion”: Momentum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mechanics/J-060_MechanicsMomentum_2_S5.html">6.5. Newton’s Famous Three laws</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mechanics/J-060_MechanicsMomentum_2_S6.html">6.6. Newton’s Second law</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mechanics/J-060_MechanicsMomentum_2_S7.html">6.7. Weight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mechanics/J-060_MechanicsMomentum_2_S8.html">6.8. Finally, Nothing: Forces in Balance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mechanics/J-060_MechanicsMomentum_2_S9.html">6.9. Circular Motion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mechanics/J-060_MechanicsMomentum_2_S10.html">6.10. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../collisions/J-070_Collisions_2_S0.html">7. Lesson 7: Collisions, Banging Things Together</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../collisions/J-070_Collisions_2_S1.html">7.1. A Little Bit of Huygens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../collisions/J-070_Collisions_2_S2.html">7.2. Varieties of Collisions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../collisions/J-070_Collisions_2_S3.html">7.3. Ideal Collisions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../collisions/J-070_Collisions_2_S4.html">7.4. Quantum-like Collisions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../collisions/J-070_Collisions_2_S5.html">7.5. Impulse and Momentum Conservation and the Third law</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../collisions/J-070_Collisions_2_S6.html">7.6. The Simplest Collision of All, Everyday and Quantum Mechanically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../collisions/J-070_Collisions_2_S7.html">7.7. Collision Diagrams: Same Song, Different Verse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../collisions/J-070_Collisions_2_S8.html">7.8. Algebra by Thermometers!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../collisions/J-070_Collisions_2_S9.html">7.9. Two and More Dimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../collisions/J-070_Collisions_2_S10.html">7.10. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../energy/J-080_energy_g_S0.html">8. Lesson 8:  Energy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../energy/J-080_energy_g_S1.html">8.1. Ability to Do Damage: Kinetic Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../energy/J-080_energy_g_S2.html">8.2. Work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../energy/J-080_energy_g_S3.html">8.3. That Stop Shot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../energy/J-080_energy_g_S4.html">8.4. Energy Conservation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../energy/J-080_energy_g_S5.html">8.5. Eager to Do Damage: Potential Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../energy/J-080_energy_g_S6.html">8.6. Okay, But What Is It…Really?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../energy/J-080_energy_g_S7.html">8.7. The Exchange of Potential and Kinetic Energies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../energy/J-080_energy_g_S8.html">8.8. Energy and Momentum, From 50,000 Feet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../energy/J-080_energy_g_S9.html">8.9. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../cosmology/J-090_Cosmology_One_S0.html">9. Lesson 9: Early Cosmology</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../cosmology/J-090_Cosmology_One_S1.html">9.1. A Little Bit of Kepler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cosmology/J-090_Cosmology_One_S2.html">9.2. Ancient Astronomy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cosmology/J-090_Cosmology_One_S3.html">9.3. Greeks, Measuring Stuff</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cosmology/J-090_Cosmology_One_S4.html">9.4. Putting the Sun Where It (almost) Belongs: Copernicus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cosmology/J-090_Cosmology_One_S5.html">9.5. Revolutionibus and Scandal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cosmology/J-090_Cosmology_One_S6.html">9.6. Astronomy, If It Ain’t Baroque, Don’t Fix It: Tycho</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cosmology/J-090_Cosmology_One_S7.html">9.7. Kepler’s Battle With Mars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cosmology/J-090_Cosmology_One_S8.html">9.8. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../cosmology/J-100_Cosmology_Two_2_g_S0.html">10. Lesson 10: Galileo’s Astronomy and Newton’s Gravitation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../cosmology/J-100_Cosmology_Two_2_g_S1.html">10.1. A Little Bit More of Galileo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cosmology/J-100_Cosmology_Two_2_g_S2.html">10.2. What Galileo Saw!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cosmology/J-100_Cosmology_Two_2_g_S3.html">10.3. The Apple Moment: Newton’s Gravity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cosmology/J-100_Cosmology_Two_2_g_S4.html">10.4. What’s the Moon’s Centripetal Acceleration?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cosmology/J-100_Cosmology_Two_2_g_S5.html">10.5. Now Think Big!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cosmology/J-100_Cosmology_Two_2_g_S6.html">10.6. Universal Gravitation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cosmology/J-100_Cosmology_Two_2_g_S7.html">10.7. The Gravitation Constant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cosmology/J-100_Cosmology_Two_3_g_S8.html">10.8. Gravitational Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cosmology/J-100_Cosmology_Two_3_g_S9.html">10.9. Three Problems for Newton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cosmology/J-100_Cosmology_Two_3_g_S10.html">10.10. Cosmology Begins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cosmology/J-100_Cosmology_Two_2_g_S11.html">10.11. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../e_and_m/J-110_ElectromagnetismCharges_2_S0.html">11. Lesson 11: Charge It! Charges and Magnets</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-110_ElectromagnetismCharges_2_S1.html">11.1. A Little of Gilbert</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-110_ElectromagnetismCharges_2_S2.html">11.2. Magnetism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-110_ElectromagnetismCharges_2_S3.html">11.3. Electricity: Poor Richard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-110_ElectromagnetismCharges_2_S4.html">11.4. Forces from Electricity: Coulomb’s Law</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-110_ElectromagnetismCharges_2_S5.html">11.5. Forces from Currents: Electromagnetism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-110_ElectromagnetismCharges_2_S6.html">11.6. Inverse Square “laws”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-110_ElectromagnetismCharges_2_S7.html">11.7. Modern Ideas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-110_ElectromagnetismCharges_2_S8.html">11.8. What to Remember from Lesson 11</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../e_and_m/J-120_Faraday_1_S0.html">12. Lesson 12: Faraday’s Experiments and An Extraordinary Idea</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-120_Faraday_1_S1.html">12.1. A Little Bit of Faraday</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-120_Faraday_1_S2.html">12.2. Faraday’s Experiments in Electricity and Magnetism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-120_Faraday_1_S3.html">12.3. Induction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-120_Faraday_1_S4.html">12.4. The Field</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-120_Faraday_1_S5.html">12.5. Faraday’s Health</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-120_Faraday_1_S6.html">12.6. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../e_and_m/J-130_FaradayFields_1_S0.html">13. Lesson 13: Faraday’s E&amp;M Fields</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-130_FaradayFields_1_S1.html">13.1. A Tiny Bit More of Faraday</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-130_FaradayFields_1_S2.html">13.2. The Electric Field</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-130_FaradayFields_1_S3.html">13.3. The Revolutionary Idea of a Field</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-130_FaradayFields_1_S4.html">13.4. Electric Field for Other Configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-130_FaradayFields_1_S5.html">13.5. Energy In Electric Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-130_FaradayFields_1_S6.html">13.6. Electron Volts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-130_FaradayFields_1_S7.html">13.7. Magnetic Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-130_FaradayFields_1_S8.html">13.8. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../e_and_m/J-140_Maxwell_3_S0.html">14. Lesson 14: Waves and Maxwell’s Fields</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-140_Maxwell_3_S1.html">14.1. A Little Bit of Maxwell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-140_Maxwell_3_S2.html">14.2. Wave Goodbye</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-140_Maxwell_3_S3.html">14.3. Maxwell’s Idea of the  Field: Maxwell’s Equations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-140_Maxwell_3_S4.html">14.4. The Jelly of the Ether</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-140_Maxwell_3_S5.html">14.5. The Speed of Light, Old School</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-140_Maxwell_3_S6.html">14.6. Maxwell’s Insight and Electromagnetic Waves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-140_Maxwell_3_S7.html">14.7. A Modern Summary of Maxwell’s Results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-140_Maxwell_3_S8.html">14.8. So What Gets an EM Wave Going?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-140_Maxwell_3_S9.html">14.9. Charged Particles in Electromagnetic Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-140_Maxwell_3_S10.html">14.10. The Lorentz Force, Broken Down</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../e_and_m/J-140_Maxwell_3_S11.html">14.11. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Relativity</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../relativity/J-150_SpecialRelativity_1_S0.html">15. Lesson 15: Special Relativity, 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-150_SpecialRelativity_1_S1.html">15.1. A Little Bit About Michelson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-150_SpecialRelativity_1_S2.html">15.2. That Zero</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-150_SpecialRelativity_1_S3.html">15.3. Moving Through The Ether</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-150_SpecialRelativity_1_S4.html">15.4. The Fallout of Michelson’s Null Result</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-150_SpecialRelativity_1_S5.html">15.5. Getting Serious: The Michelson-Morley Experiment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-150_SpecialRelativity_1_S6.html">15.6. Michelson and Chicago</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-150_SpecialRelativity_1_S7.html">15.7. More Trouble With Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-150_SpecialRelativity_1_S8.html">15.8. Frames of Reference, For Real</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-150_SpecialRelativity_1_S9.html">15.9. What to Remember from Lesson 15</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../relativity/J-160_SpecialRelativity_2_S0.html">16. Lesson 16: <br/>Special Relativity, 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-160_SpecialRelativity_2_S1.html">16.1. A Little Bit About Einstein</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-160_SpecialRelativity_2_S2.html">16.2. A Different Way Out: Einstein’s Relativity Paper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-160_SpecialRelativity_2_S3.html">16.3. What Was the Cause of That Storm? The Second Postulate’s Implications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-160_SpecialRelativity_2_S4.html">16.4. Queue: The Soapbox.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-160_SpecialRelativity_2_S5.html">16.5. Double Down on the Second Postulate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-160_SpecialRelativity_2_S6.html">16.6. Time Dilation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-160_SpecialRelativity_2_S7.html">16.7. Length Contraction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-160_SpecialRelativity_2_S8.html">16.8. Let’s Summarize</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-160_SpecialRelativity_2_S9.html">16.9. Is Relativity the Case?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-160_SpecialRelativity_2_S10.html">16.10. What to Remember from Lesson 16</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../relativity/J-170_SpecialRelativity_3_S0.html">17. Lesson 17: <br/>Special Relativity, 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-170_SpecialRelativity_3_S1.html">17.1. A Little Bit about Lorentz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-170_SpecialRelativity_3_S2.html">17.2. Lorentz Transformations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-170_SpecialRelativity_3_S3.html">17.3. Maxwell’s Equations, Revisited</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-170_SpecialRelativity_3_S4.html">17.4. Speeds in Special Relativity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-170_SpecialRelativity_3_S5.html">17.5. What to Remember from Lesson 17</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../relativity/J-180_SpecialRelativity_4_S0.html">18. Lesson 18: <br/>Special Relativity, 4</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-180_SpecialRelativity_4_S1.html">18.1. A Little Bit of Minkowski</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-180_SpecialRelativity_4_S2.html">18.2. Working Our Way toward Relativistic Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-180_SpecialRelativity_4_S3.html">18.3. The Rubber Meets the Road: Particle Creation and Potential Energies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-180_SpecialRelativity_4_S4.html">18.4. Isn’t Anything Constant??</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-180_SpecialRelativity_4_S5.html">18.5. Spacetime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-180_SpecialRelativity_4_S6.html">18.6. The Aftermath</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-180_SpecialRelativity_4_S7.html">18.7. Is Relativity The Case?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../relativity/J-180_SpecialRelativity_4_S8.html">18.8. What To Remember from Lesson 18</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fexamples/mechanics/apple_1_E3.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/examples/mechanics/apple_1_E3.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>The Big Mo, Force and Momentum</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3-more-apples">Example 3: more apples.</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="the-big-mo-force-and-momentum">
+<h1>The Big Mo, Force and Momentum<a class="headerlink" href="#the-big-mo-force-and-momentum" title="Permalink to this heading">#</a></h1>
+<section id="example-3-more-apples">
+<h2>Example 3: more apples.<a class="headerlink" href="#example-3-more-apples" title="Permalink to this heading">#</a></h2>
+<p><strong>The Question:</strong> In the apple example in the last lesson you calculated that the speed that an apple would attain if it was dropped 1 meter would be 4.4 m/s. You did that, right? Let’s be more realistic. Look at the figure for our new situation. The apple at A is dropped onto the carpet and bruises as it flattens out at B, slowing it down to a stop. The carpet applies a force to it which would be pointing up. (You can see the damage in the inset.) If it takes 0.090 s (90 milliseconds) for the apple to stop on the carpet, what is the average force during that time (<span class="math notranslate nohighlight">\(\Delta t\)</span>) that the carpet applies to it in order to bring it to rest? The mass of an apple here is 0.1 kg.</p>
+<p>Look at the squishing of the apple as it quickly slows to a stop:</p>
+<img alt="../../_images/applebruised.png" class="align-center" src="../../_images/applebruised.png" />
+<BR CLEAR="all">
+<hr class="docutils" />
+<p><strong>The Answer:</strong> This is an example of something slowing down and deforming (squishing) through a finite time - like all collisions in real life.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+F &amp;=\frac{\Delta p}{\Delta t} \\
+&amp;= \frac{m\Delta v}{\Delta t}
+\end{align*}
+\end{split}\]</div>
+<p>The change in velocity is of course the velocity that the apple has at the end—just before it hits—minus the velocity it had at the beginning—which is zero, since it was just dropped. so <span class="math notranslate nohighlight">\(\Delta v = v-v_0=v\)</span>. Putting the numbers:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+F &amp;= \frac{(0.1 \text{  kg } )(4.4 \text{ m/s})}{0.09 \text{ s}} \\
+F &amp;= 4.9~\text{ N}
+\end{align*}
+\end{split}\]</div>
+<p>which is about half of the force of gravity. The apple would probably not  bruise very much. Go try it.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./examples/mechanics"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3-more-apples">Example 3: more apples.</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Raymond Brock
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

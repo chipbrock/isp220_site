@@ -1,0 +1,795 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>6.1. A Little Bit of Newton &#8212; Quarks, Spacetime, and the Big Bang</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.4cbf315f70debaebd550c87a6162cf0f.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystyle.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'mechanics/J-060_MechanicsMomentum_2_S1';</script>
+    <link rel="canonical" href="https://chipbrock.github.io/isp220_site/mechanics/J-060_MechanicsMomentum_2_S1.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="6.2. Impulse: Getting Going" href="J-060_MechanicsMomentum_2_S2.html" />
+    <link rel="prev" title="6. Lesson 6: The Big Mo, Force and Momentum" href="J-060_MechanicsMomentum_2_S0.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Quarks, Spacetime, and the Big Bang</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to Quarks, Spacetime, and the Big Bang!
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Foundations</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../beginning/J-010_me_S0.html">1. Lesson 1: A Little Bit About This On-line Text</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../beginning/J-010_me_S1.html">1.1. What Quarks, Spacetime, and the Big Bang Isn’t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../beginning/J-010_me_S2.html">1.2. What Quarks, Spacetime, and the Big Bang Is</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../beginning/J-010_me_S3.html">1.3. The Great Scientist Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../beginning/J-010_me_S4.html">1.4. How I Think About You and Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../beginning/J-010_me_S5.html">1.5. How Deep Do We Go?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../beginning/J-010_me_S6.html">1.6. Let’s Go!</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../beginning/J-020_preface_S0.html">2. Lesson 2: Once Upon a Time…</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../beginning/J-035_what_you_know_S0.html">3. Lesson 3: What I’ll Bet You Know Already</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../beginning/J-035_what_you_know_S1.html">3.1. Remembering Motion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../beginning/J-035_what_you_know_S2.html">3.2. Some Mathematics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../beginning/J-035_what_you_know_S3.html">3.3. Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../beginning/J-035_what_you_know_S4.html">3.4. Matter</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../math/J-040_math_g_S0.html">4. Lesson 4: Mathematics, The M Word</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../math/J-040_math_g_S1.html">4.1. A Little Bit of Descartes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/J-040_math_g_S2.html">4.2. The M Word</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/J-040_math_g_S3.html">4.3. Functions, the QS&amp;BB Way</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/J-040_math_g_S4.html">4.4. A Gentle Review 1: Skills You’ll Frequently Need</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/J-040_math_g_S5.html">4.5. Geometry: Vectors, Curves…Formulas From Your Past?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/J-040_math_g_S6.html">4.6. A Gentle Review 2: Skills for Only a Few Times</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/J-040_math_g_S7.html">4.7. What to Remember from Lesson 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S0.html">5. Lesson 5: <br/>Motion, Getting From Here to There</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S1.html">5.1. A Little Bit of Galileo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S2.html">5.2. The Medieval Version of Here to There: A Little Bit of Aristotle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S3.html">5.3. Getting From Here to There: At Constant Speed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S4.html">5.4. A Model for Motion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S5.html">5.5. Multiplication and Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S6.html">5.6. Now For Something Completely Different: Feynman Diagrams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S7.html">5.7. Back to Galileo: Acceleration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S8.html">5.8. The Equations of Constant Acceleration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S9.html">5.9. Acceleration, In Everyday Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S10.html">5.10. Special Kinds of Acceleration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S11.html">5.11. The Pendulum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S12.html">5.12. Going In the Right Direction!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S13.html">5.13. Projectiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S14.html">5.14. The Beginning of Physics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/J-050_motion_g_galileo2_S15.html">5.15. What to Remember from Lesson 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="J-060_MechanicsMomentum_2_S0.html">6. Lesson 6: <br/>The Big Mo, Force and Momentum</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">6.1. A Little Bit of Newton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-060_MechanicsMomentum_2_S2.html">6.2. Impulse: Getting Going</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-060_MechanicsMomentum_2_S3.html">6.3. Newton’s Mass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-060_MechanicsMomentum_2_S4.html">6.4. The “Quantity of Motion”: Momentum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-060_MechanicsMomentum_2_S5.html">6.5. Newton’s Famous Three laws</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-060_MechanicsMomentum_2_S6.html">6.6. Newton’s Second law</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-060_MechanicsMomentum_2_S7.html">6.7. Weight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-060_MechanicsMomentum_2_S8.html">6.8. Finally, Nothing: Forces in Balance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-060_MechanicsMomentum_2_S9.html">6.9. Circular Motion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="J-060_MechanicsMomentum_2_S10.html">6.10. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../collisions/J-070_Collisions_2_S0.html">7. Lesson 7: Collisions, Banging Things Together</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../collisions/J-070_Collisions_2_S1.html">7.1. A Little Bit of Huygens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collisions/J-070_Collisions_2_S2.html">7.2. Varieties of Collisions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collisions/J-070_Collisions_2_S3.html">7.3. Ideal Collisions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collisions/J-070_Collisions_2_S4.html">7.4. Quantum-like Collisions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collisions/J-070_Collisions_2_S5.html">7.5. Impulse and Momentum Conservation and the Third law</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collisions/J-070_Collisions_2_S6.html">7.6. The Simplest Collision of All, Everyday and Quantum Mechanically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collisions/J-070_Collisions_2_S7.html">7.7. Collision Diagrams: Same Song, Different Verse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collisions/J-070_Collisions_2_S8.html">7.8. Algebra by Thermometers!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collisions/J-070_Collisions_2_S9.html">7.9. Two and More Dimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collisions/J-070_Collisions_2_S10.html">7.10. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../energy/J-080_energy_g_S0.html">8. Lesson 8:  Energy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../energy/J-080_energy_g_S1.html">8.1. Ability to Do Damage: Kinetic Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../energy/J-080_energy_g_S2.html">8.2. Work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../energy/J-080_energy_g_S3.html">8.3. That Stop Shot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../energy/J-080_energy_g_S4.html">8.4. Energy Conservation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../energy/J-080_energy_g_S5.html">8.5. Eager to Do Damage: Potential Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../energy/J-080_energy_g_S6.html">8.6. Okay, But What Is It…Really?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../energy/J-080_energy_g_S7.html">8.7. The Exchange of Potential and Kinetic Energies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../energy/J-080_energy_g_S8.html">8.8. Energy and Momentum, From 50,000 Feet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../energy/J-080_energy_g_S9.html">8.9. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../cosmology/J-090_Cosmology_One_S0.html">9. Lesson 9: Early Cosmology</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-090_Cosmology_One_S1.html">9.1. A Little Bit of Kepler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-090_Cosmology_One_S2.html">9.2. Ancient Astronomy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-090_Cosmology_One_S3.html">9.3. Greeks, Measuring Stuff</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-090_Cosmology_One_S4.html">9.4. Putting the Sun Where It (almost) Belongs: Copernicus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-090_Cosmology_One_S5.html">9.5. Revolutionibus and Scandal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-090_Cosmology_One_S6.html">9.6. Astronomy, If It Ain’t Baroque, Don’t Fix It: Tycho</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-090_Cosmology_One_S7.html">9.7. Kepler’s Battle With Mars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-090_Cosmology_One_S8.html">9.8. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_2_g_S0.html">10. Lesson 10: Galileo’s Astronomy and Newton’s Gravitation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_2_g_S1.html">10.1. A Little Bit More of Galileo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_2_g_S2.html">10.2. What Galileo Saw!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_2_g_S3.html">10.3. The Apple Moment: Newton’s Gravity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_2_g_S4.html">10.4. What’s the Moon’s Centripetal Acceleration?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_2_g_S5.html">10.5. Now Think Big!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_2_g_S6.html">10.6. Universal Gravitation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_2_g_S7.html">10.7. The Gravitation Constant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_3_g_S8.html">10.8. Gravitational Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_3_g_S9.html">10.9. Three Problems for Newton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_3_g_S10.html">10.10. Cosmology Begins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/J-100_Cosmology_Two_2_g_S11.html">10.11. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../e_and_m/J-110_ElectromagnetismCharges_2_S0.html">11. Lesson 11: Charge It! Charges and Magnets</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-110_ElectromagnetismCharges_2_S1.html">11.1. A Little of Gilbert</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-110_ElectromagnetismCharges_2_S2.html">11.2. Magnetism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-110_ElectromagnetismCharges_2_S3.html">11.3. Electricity: Poor Richard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-110_ElectromagnetismCharges_2_S4.html">11.4. Forces from Electricity: Coulomb’s Law</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-110_ElectromagnetismCharges_2_S5.html">11.5. Forces from Currents: Electromagnetism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-110_ElectromagnetismCharges_2_S6.html">11.6. Inverse Square “laws”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-110_ElectromagnetismCharges_2_S7.html">11.7. Modern Ideas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-110_ElectromagnetismCharges_2_S8.html">11.8. What to Remember from Lesson 11</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../e_and_m/J-120_Faraday_1_S0.html">12. Lesson 12: Faraday’s Experiments and An Extraordinary Idea</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-120_Faraday_1_S1.html">12.1. A Little Bit of Faraday</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-120_Faraday_1_S2.html">12.2. Faraday’s Experiments in Electricity and Magnetism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-120_Faraday_1_S3.html">12.3. Induction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-120_Faraday_1_S4.html">12.4. The Field</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-120_Faraday_1_S5.html">12.5. Faraday’s Health</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-120_Faraday_1_S6.html">12.6. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../e_and_m/J-130_FaradayFields_1_S0.html">13. Lesson 13: Faraday’s E&amp;M Fields</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-130_FaradayFields_1_S1.html">13.1. A Tiny Bit More of Faraday</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-130_FaradayFields_1_S2.html">13.2. The Electric Field</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-130_FaradayFields_1_S3.html">13.3. The Revolutionary Idea of a Field</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-130_FaradayFields_1_S4.html">13.4. Electric Field for Other Configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-130_FaradayFields_1_S5.html">13.5. Energy In Electric Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-130_FaradayFields_1_S6.html">13.6. Electron Volts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-130_FaradayFields_1_S7.html">13.7. Magnetic Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-130_FaradayFields_1_S8.html">13.8. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S0.html">14. Lesson 14: Waves and Maxwell’s Fields</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S1.html">14.1. A Little Bit of Maxwell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S2.html">14.2. Wave Goodbye</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S3.html">14.3. Maxwell’s Idea of the  Field: Maxwell’s Equations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S4.html">14.4. The Jelly of the Ether</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S5.html">14.5. The Speed of Light, Old School</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S6.html">14.6. Maxwell’s Insight and Electromagnetic Waves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S7.html">14.7. A Modern Summary of Maxwell’s Results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S8.html">14.8. So What Gets an EM Wave Going?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S9.html">14.9. Charged Particles in Electromagnetic Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S10.html">14.10. The Lorentz Force, Broken Down</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../e_and_m/J-140_Maxwell_3_S11.html">14.11. What to Remember from Lesson</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Relativity</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../relativity/J-150_SpecialRelativity_1_S0.html">15. Lesson 15: Special Relativity, 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-150_SpecialRelativity_1_S1.html">15.1. A Little Bit About Michelson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-150_SpecialRelativity_1_S2.html">15.2. That Zero</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-150_SpecialRelativity_1_S3.html">15.3. Moving Through The Ether</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-150_SpecialRelativity_1_S4.html">15.4. The Fallout of Michelson’s Null Result</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-150_SpecialRelativity_1_S5.html">15.5. Getting Serious: The Michelson-Morley Experiment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-150_SpecialRelativity_1_S6.html">15.6. Michelson and Chicago</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-150_SpecialRelativity_1_S7.html">15.7. More Trouble With Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-150_SpecialRelativity_1_S8.html">15.8. Frames of Reference, For Real</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-150_SpecialRelativity_1_S9.html">15.9. What to Remember from Lesson 15</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../relativity/J-160_SpecialRelativity_2_S0.html">16. Lesson 16: <br/>Special Relativity, 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-160_SpecialRelativity_2_S1.html">16.1. A Little Bit About Einstein</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-160_SpecialRelativity_2_S2.html">16.2. A Different Way Out: Einstein’s Relativity Paper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-160_SpecialRelativity_2_S3.html">16.3. What Was the Cause of That Storm? The Second Postulate’s Implications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-160_SpecialRelativity_2_S4.html">16.4. Queue: The Soapbox.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-160_SpecialRelativity_2_S5.html">16.5. Double Down on the Second Postulate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-160_SpecialRelativity_2_S6.html">16.6. Time Dilation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-160_SpecialRelativity_2_S7.html">16.7. Length Contraction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-160_SpecialRelativity_2_S8.html">16.8. Let’s Summarize</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-160_SpecialRelativity_2_S9.html">16.9. Is Relativity the Case?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-160_SpecialRelativity_2_S10.html">16.10. What to Remember from Lesson 16</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../relativity/J-170_SpecialRelativity_3_S0.html">17. Lesson 17: <br/>Special Relativity, 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-170_SpecialRelativity_3_S1.html">17.1. A Little Bit about Lorentz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-170_SpecialRelativity_3_S2.html">17.2. Lorentz Transformations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-170_SpecialRelativity_3_S3.html">17.3. Maxwell’s Equations, Revisited</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-170_SpecialRelativity_3_S4.html">17.4. Speeds in Special Relativity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-170_SpecialRelativity_3_S5.html">17.5. What to Remember from Lesson 17</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../relativity/J-180_SpecialRelativity_4_S0.html">18. Lesson 18: <br/>Special Relativity, 4</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-180_SpecialRelativity_4_S1.html">18.1. A Little Bit of Minkowski</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-180_SpecialRelativity_4_S2.html">18.2. Working Our Way toward Relativistic Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-180_SpecialRelativity_4_S3.html">18.3. The Rubber Meets the Road: Particle Creation and Potential Energies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-180_SpecialRelativity_4_S4.html">18.4. Isn’t Anything Constant??</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-180_SpecialRelativity_4_S5.html">18.5. Spacetime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-180_SpecialRelativity_4_S6.html">18.6. The Aftermath</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-180_SpecialRelativity_4_S7.html">18.7. Is Relativity The Case?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/J-180_SpecialRelativity_4_S8.html">18.8. What To Remember from Lesson 18</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmechanics/J-060_MechanicsMomentum_2_S1.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/mechanics/J-060_MechanicsMomentum_2_S1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>A Little Bit of Newton</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="a-little-bit-of-newton">
+<h1><span class="section-number">6.1. </span>A Little Bit of Newton<a class="headerlink" href="#a-little-bit-of-newton" title="Permalink to this heading">#</a></h1>
+<p>I’m always saddened when I think of this young man’s childhood. Imagine a 3 year old abandoned by his newly-married mother and forced to live with grandparents who didn’t want him. That’s the beginning of the biggest scientific life of all: Isaac Newton’s. His childhood was a mixture of pain and some accidental fortunate associations. His father was a farmer in Woolsthorpe, not far from Nottingham and a little more than 100 miles north of London. Isaac senior died before tiny, premature Isaac was born. When he was 3 years old, his mother, Hannah—a semi-literate woman for whom the farm and manor was a big job—married the 63 year old Rector of North Witham who wanted nothing to do with a frail toddler who was then left in the care of his maternal grandparents and female cousins. Seven years later, Hannah, a widow yet again, returned with two young children in tow. While she had been away, young Isaac had been sent to school, a privilege that might not have happened had his father been alive. He’d have become a farmer. But a bad one.</p>
+<figure class="align-default" id="directive-fig">
+<a class="reference internal image-reference" href="_images/mechanics/newton.png"><img alt="_images/mechanics/newton.png" src="_images/mechanics/newton.png" style="width: 350px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.1 </span><span class="caption-text">Isaac Newton, circa 1689. 1642-1726</span><a class="headerlink" href="#directive-fig" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>When he was 12 years old, Isaac was sent to a Free Grammar School in Grantham where the emphasis was Latin (“Grammar,” after all), which was the language of intellectuals and in which he wrote his great works. He lived with the apothecary, another lucky break as that family indulged his precocious abilities with tools and crafts. In what must have been one of the most frivolous activities of not just his adolescence, but his entire odd life, one night he constructed dozens of kites with firecrackers, which he flew over the town at night “…wonderfully affrighting all of the neighboring inhabitants for some time, and causing not a little discourse on market days…”</p>
+<p>He was a loner then, and for most of his adult life. “His school fellows generally were not very affectionate toward him. He was commonly too cunning for them in everything. He who has most understanding is least regarded.” When he was 17 years old Hannah tried to turn him into a farmer, but he was a disaster. She gave up and sent him back to Grantham to prepare him for university…as the only outlet for his increasingly apparent, unusual mind.</p>
+<p>He was sent to Trinity College at Cambridge University where he was enrolled as a “Sizar,” which was essentially the role of servant to an upperclassman. He was 18 years old, older than most of the students and as a studious person, different from the mostly carefree student body. He made a single friend, a most unlikely event for the difficult Newton. One day he met a fellow lonely student on a park bench. John Wickins and Isaac Newton found commomn interests and became roommates—for 20 years until Wickins married. Wickins was Newton’s assistant as he began his life of changing the world.</p>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="_images/mechanics/newtonHome.png"><img alt="_images/mechanics/newtonHome.png" src="_images/mechanics/newtonHome.png" style="width: 350px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.2 </span><span class="caption-text">Newtons’s birthplace in Woolsthorpe, about 130 miles from London.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="_images/mechanics/newtonNotebook1.png"><img alt="_images/mechanics/newtonNotebook1.png" src="_images/mechanics/newtonNotebook1.png" style="width: 350px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.3 </span><span class="caption-text">Notes in his hand from his day book.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="_images/mechanics/newtonRooms.png"><img alt="_images/mechanics/newtonRooms.png" src="_images/mechanics/newtonRooms.png" style="width: 350px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.4 </span><span class="caption-text">Newton’s rooms at Cambridge University, just above the doorway.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="_images/mechanics/principia1.png"><img alt="_images/mechanics/principia1.png" src="_images/mechanics/principia1.png" style="width: 350px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.5 </span><span class="caption-text">A page from <em>Principia</em> showing notations.</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="_images/mechanics/principia2.png"><img alt="_images/mechanics/principia2.png" src="_images/mechanics/principia2.png" style="width: 350px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.6 </span><span class="caption-text">The cover of his <em>Principia</em> with some notations.</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="_images/mechanics/newtonold.png"><img alt="_images/mechanics/newtonold.png" src="_images/mechanics/newtonold.png" style="width: 350px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.7 </span><span class="caption-text">Portrait of Sir Isaac Newton around 1709 at the age of 67 by the famous British portraitist, James Thornhill.</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id7">
+<a class="reference internal image-reference" href="_images/mechanics/newtonTomb.png"><img alt="_images/mechanics/newtonTomb.png" src="_images/mechanics/newtonTomb.png" style="width: 350px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.8 </span><span class="caption-text">Newton’s tomb in Westminster Abbey.</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The curriculum at Cambridge was reliably old-fashioned: Aristotle, from top to bottom. But René Descartes from the Continent was all the rage and was read and secretly discussed by students. To Descartes, the world was mathematical in a manner beyond what Galileo might have imagined. It was he who blended geometry together with the brand new algebra so that equations could be presented as curves and equivalently, curves as equations. Of course we call our axes, “Cartesian” after their inventor.</p>
+<p>Descartes was also a mechanist: meaning he believed that matter’s mechanical interactions caused all motion. Nothing spiritual, nothing occult, nothing random. God originally inserted overall motion into the universe, and apparently then abandoned his creation in order to pursue other interests? In any case, Descartes believed that original motion persisted as the universe formed and that God did not drop in and adjust things. Even the planets moved by being carried by vortices of invisible spheres. His world was predictable according to Laws (yes, capital L for Descartes’s purposes), and he proposed to start with them and draw observable conclusions—deductions. Mechanical modeling was his goal, and analytical mathematics was his tool. Very top-down was Descartes: postulate the principle idea and causes and draw conclusions deductively. Without that original cause, the conclusions can’t happen. Always: the causes of things had to come first.</p>
+<blockquote>
+<div><p>Descartes was all about <em>Why</em>. Newton weaned us from Why to <em>How</em>.</p>
+</div></blockquote>
+<p>The young, inquisitive Newton ate Descartes up. Here was an escape from Aristotle and a systematic and mathematical way out—right up Newton’s alley. But Descartes’ conclusions and his method were problematic for Newton and much of what he later wrote was in reaction to this unrequited disagreement.</p>
+<p>But the Frenchman’s mathematics stuck and the neo-Platonists at Cambridge carried Descartes’ mathematics program forward. The leader of that movement was Isaac Barrow, the first “Lucasian Professor of Mathematics.” Isaac Newton was the second (Paul Dirac, who we’ll meet later, was 15th and Stephen Hawking was the 17th). Newton became a student of Barrow’s and eventually his beneficiary.</p>
+<p>Disaster struck in London 1664 when the Bubonic Plague raged  Before it was over, 20% of the population was dead. By 1665 London emptied out (one imagines frightened servant staff remaining behind to protect their masters’ homes while the families fled).  Cambridge  University closed and the 23 year old Newton went home to Woolsthorpe, where he worked by himself for more than a year. During that period he consumed all mathematics known at the time and went beyond. While at the farm, he essentially invented calculus, had his first ideas about gravity (the famous apple was to have fallen in his presence during this period), and reinvented the science of optics.</p>
+<blockquote>
+<div><p><strong>What did you do on your summer vacation?</strong></p>
+</div></blockquote>
+<blockquote>
+<div><p>“In the beginning of the year 1665 I found the Method of approximating series &amp; the Rule for reducing any dignity of any Binomial into such a series. The same year in May I found the method of Tangents…, &amp; in November had the direct method of fluxions &amp; the next year in January had the Theory of Colors &amp; in May following I had entrance into the inverse method of fluxions. And the same year I began to think of gravity extending to the orb of the Moon &amp; (having found out how to estimate the force with which a globe revolving within a sphere presses the surface of the sphere) from Kepler’s rule…I deducted that the forces which keep the Planets in their Orbs must be reciprocally as the squares of their distances from the centers about which they revolve: &amp; thereby compared the force requisite to keep the Moon in her Orb with the force of gravity at the surface of the earth, &amp; found them answer pretty nearly. All this was in the two plague years of 1665 &amp; 1666. For in those days, I was in the prime of my age for invention &amp; minded Mathematicks &amp; Philosophy more than at any time since.”</p>
+</div></blockquote>
+<p>Among Newton’s discoveries during the plague years was that sunlight is composed of all colors, which was in conflict with the standard (Cartesian!) idea that white light was a color of its own and that the colors we see are mixtures of white and dark. He passed light through a prism and found that it spread out into a continuous spectrum of colors. This led him to experiment with light passing through glass and to grinding his own lenses for telescopes. Telescopes had become long and unwieldy and because glass lenses spread out the colors  (“chromatic aberration”) precise images were difficult to achieve. Newton changed the design completely, using mirrors rather than lenses. The result was images of higher quality with higher magnification in a compact instrument. His original six-inch “Newtonian reflecting telescope” would magnify 40 times, which would have required a six-foot long conventional telescope resulting in a poorer image to boot. All telescopes today are off-shoots of the Newtonian design.</p>
+<p>When he returned to Cambridge his mathematical skills exploded, surpassing those of all around him. In 1667 at the age of 25 he was named a Fellow (like an assistant professor) with a salary. In 1669, Barrow resigned the Lucasian Chair insisting on Newton’s appointment to this highest post in the college. (“Mr. Newton, a fellow of our College, and very young … but of an extraordinary genius and proficiency in these things.”)  One of the few duties of the Lucasian Chair was to offer a single course a year, which he dutifully fulfilled, but often lecturing to an empty classroom since nobody could understand him.</p>
+<figure class="align-default" id="id8">
+<a class="reference internal image-reference" href="_images/mechanics/newtonstelescope.png"><img alt="_images/mechanics/newtonstelescope.png" src="_images/mechanics/newtonstelescope.png" style="width: 350px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.9 </span><span class="caption-text">Newton’s orginal conception telescope.</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The reflecting telescope and his explanation constituted his first entry toward membership in the Royal Academy of Sciences. His report on how it worked led to the explication of his theory of light, which the Curator of Experiments, Robert Hooke, thought was stolen from his (incorrect) ideas. They became bitter enemies for life, one of a number of such vicious rivalries that Newton suffered into—and beyond—old age.</p>
+<p>So galling was this dispute and the criticism that his theory of colors attracted from all over Europe, that Newton went into nearly complete isolation, vowing to keep the products of his research secret, rather than ever again suffer such public antagonism. He communicated almost exclusively through voluminous correspondence, much of which still exists. Newton didn’t suffer fools well, and even a legitimate dispute would send him into a towering rage, or stony silence. His response to Hooke was to write a book on optics, which he inadvertently destroyed when a fire from an alchemy experiment went out of control. (He rewrote it many years later.)</p>
+<blockquote>
+<div><p><strong>That’s not all</strong></p>
+</div></blockquote>
+<blockquote>
+<div><p>Newton was an accomplished alchemist,  damaging himself with the noxious chemicals that he inhaled and tasted. He had strange ideas about non-scientific things. For example, he believed that God had given first-knowledge of the physical universe to the Ancients (which they suppressed…whoever “they” were), and that among those ideas were alchemical discoveries still to be found. His lodging was near to his laboratory on the Cambridge Trinity College campus and a huge furnace fire was never put out as he single-mindedly attacked alchemy, the precursor to chemistry. <br><br>He also was an unusual religious fanatic. He learned Hebrew and translated the Bible from original texts and became convinced that fourth-century changes made the false claim of the divinity of Jesus.  So he was a very un-traditional Christian, a believer in a God of Nature, but not the Trinity. He wrote much more about alchemy and his heretical religious research (unrevealed until after his death) than he did about science!</p>
+</div></blockquote>
+<p>What we recognize as Newton’s enduring scientific work came as the result of a wager, and we’ll pick up that story when we study his law of Gravitation and the first-ever attempt at a scientific cosmology in our lesson on Gravitation. Everything he discovered about mechanics and gravitation is  contained in one enormous, ponderously written, thickly Latin, often revised book.</p>
+<blockquote>
+<div><p><strong>The Book</strong></p>
+</div></blockquote>
+<blockquote>
+<div><p>Newton was in his 40’s when he basically sequestered himself in his rooms, working on his alchemy and intensely strange religious researches. In 1684 three of his colleagues the famous London architect Christopher Wren, the scientist Edmund Halley (of eventual comet-fame), and his arch nemesis Robert Hooke were trying hard to figure out the shape of a planetary orbit if the force of gravity varied like the inverse square of the distance from the Sun. Hooke claimed in his obnoxious way that he knew the answer, but he would not produce a calculation—because he couldn’t: he had no mathematical training. He prospered entirely on his remarkable  instincts as an experimenter.</p>
+</div></blockquote>
+<blockquote>
+<div><p>But, a little of Robert Hooke went a long way, and Wren and Halley got tired of listening to him so they deputized Halley to go ask Newton. He showed up unannounced at Newton’s messy room and asked him. Immediately came the recluse’s famous response: “An ellipse.” “Why?” asked Halley. “Because I have calculated it.” But, typical of the paranoid Newton, he’d not told anyone.</p>
+</div></blockquote>
+<blockquote>
+<div><p>He’d worked out the mathematical rules for the motion of the planets and kept it a secret!  While Halley waited, Newton searched but could not find his calculation, and Halley left empty-handed. A few days later, Halley received nine pages from Newton that showed: if the force on a planet varies like the inverse square of the distance from the center of the orbit at the Sun, then the orbit’s shape must be a conic (a parabola, ellipse, circle, or hyperbola). And he showed that if the orbit is an ellipse, that the force of attraction must be an inverse-square. This pamphlet became known as, <em>De Motu Corporum in Gyrum</em> (<em>On the Motion of Revolving Bodies</em>). <em>De Motu</em>, as it’s known, was a summary of the first book of his eventually triumphant work. The figure at the side shows a page of <em>De Motu</em> in Newton’s hand that he later prepared for his correspondent-friend, John Locke. This electrified Cambridge and London and set Hooke’s teeth on edge as he’d guessed some of the same conclusions and again insisted that Newton had stolen his ideas.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Halley realized what Newton had done and implored him repeatedly to write it all. Newton finally agreed and went into one of the historically most intense periods of concentration ever embarked on by anyone. For two years he worked night and day, forgetting to eat, wandering around Cambridge without regard to his surroundings. Thousands of pages of manuscript littering his quarters mingled with days’ worth of uneaten food. Two years! Eventually he emerged with the first book of what was to be three volumes of <em>Philosophicæ Naturalis Principia Mathematica</em>, or the <em>Mathematical Principles of Natural Philosophy</em> affectionately known ever after as The “<em>Principia</em>.” It was all there in Latin. His laws of motion and gravitation, but also of fluids and the strengths of materials and his own description of the scientific method. He’d pestered scientists and astronomers from around Britain for data on the planets and the tides.</p>
+</div></blockquote>
+<figure class="align-default" id="id9">
+<a class="reference internal image-reference" href="_images/mechanics/demotunewton.png"><img alt="_images/mechanics/demotunewton.png" src="_images/mechanics/demotunewton.png" style="width: 500px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.10 </span><span class="caption-text">A portion of <em>De Motu</em> in Newton’s hand in 1684, written for John Locke who was an early reader of Principia.</span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<blockquote>
+<div><p>He’d made measurements of motion in his own lab. He let his alchemy furnace go out forever as he worked solely on his “system of the world.” The arguments were mathematical and constituted the first workable model of motion, kinematics and dynamics, and also gravity (later). He continued to hide his calculus, preferring to speak in terms of limits and extrapolations using geometrical constructions, surely backed up by his own private calculus-based calculations. <em>Principia</em> went through three editions after the original 1686 start, often with him revising his last chapter, which was more philosophical, but also with successive furious deletions of the names of rivals.<br><br>
+Halley had persuaded the Royal Society to act as the publisher of <em>Principia</em> and Newton dedicated it so. But the coffers of the Society were dry when it came time to print as they had used up their entire accounts in a lavishly illustrated two volume, <em>History of Fishes</em>.</p>
+</div></blockquote>
+<blockquote>
+<div><p>So Halley took a deep breath and paid for the initial publication himself. This of course led to his active interest in encouraging Newton to push the book off at booksellers and libraries himself. Never was there a more generous gift to science than Halley’s unselfish gesture. And for a book that only a few people in the world could read, but a book that quite possibly initiated the Enlightenment and people’s relationship to our universe.</p>
+</div></blockquote>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./mechanics"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="J-060_MechanicsMomentum_2_S0.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">6. </span>Lesson 6: <br>The Big Mo, Force and Momentum</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="J-060_MechanicsMomentum_2_S2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">6.2. </span>Impulse: Getting Going</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Raymond Brock
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
